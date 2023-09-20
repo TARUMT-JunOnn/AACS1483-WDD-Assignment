@@ -1,0 +1,89 @@
+@font-face {
+    font-family: PlayFair;
+    src: url("PlayfairDisplay-Font.ttf") format("truetype");
+}
+
+header{
+padding-bottom: 2%;
+}
+
+#logoHead{
+    text-align: center;
+    font: bold 40px/15px PlayFair, sans-serif;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#logoFoot{
+    font: bold 20px/15px PlayFair, sans-serif;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+ul#head{
+    display: flex;
+    margin: auto 30%;
+    text-align: center;
+}
+
+
+li.navigation{
+    display: block;
+    box-sizing: border-box;
+    width: 25%;
+    font: 350 20px/normal Calibri, sans-serif;
+    padding: 2%;
+}
+
+li.navigation:hover{
+    background-color: #dddddd;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li.navigation a{
+    justify-content: center;
+}
+
+footer{
+    padding-top: 1%;
+    text-align: center;
+}
+
+#Subcribe{
+    margin: 2%;
+    font: 25px/10px PlayFair, sans-serif;
+}
+
+#emailSub{
+    width: 300px;
+    height: 40px;
+    border: 2px solid black;
+}
+
+#emailButton{
+    width: 60px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+
+section{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#emailCharlotte{
+    font-family: Calibri, sans-serif;
+    font-weight: lighter;
+}
+
+#copyright{
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
