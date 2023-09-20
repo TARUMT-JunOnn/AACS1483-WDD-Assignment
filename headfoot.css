@@ -1,10 +1,12 @@
+@charset "utf-8";
+
 @font-face {
     font-family: PlayFair;
     src: url("PlayfairDisplay-Font.ttf") format("truetype");
 }
 
 header{
-padding-bottom: 2%;
+    padding-bottom: 2%;
 }
 
 #logoHead{
@@ -32,20 +34,22 @@ li.navigation{
     box-sizing: border-box;
     width: 25%;
     font: 350 20px/normal Calibri, sans-serif;
-    padding: 2%;
 }
 
-li.navigation:hover{
+li.navigation a{
+    display: block;
+    padding: 3%;
+    transition: background-color 0.8s ease-out;
+    border-radius: 4px;
+}
+
+li.navigation a:hover{
     background-color: #dddddd;
 }
 
 a{
     text-decoration: none;
     color: black;
-}
-
-li.navigation a{
-    justify-content: center;
 }
 
 footer{
@@ -61,6 +65,7 @@ footer{
 #emailSub{
     width: 300px;
     height: 40px;
+    border-radius: 10px;
     border: 2px solid black;
 }
 
@@ -68,7 +73,11 @@ footer{
     width: 60px;
     color: white;
     background-color: black;
-    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#emailButton:active{
+    border: 1px solid white;
 }
 
 section{
@@ -80,6 +89,10 @@ section{
 #emailCharlotte{
     font-family: Calibri, sans-serif;
     font-weight: lighter;
+}
+
+#emailCharlotte:hover{
+    color: #404040;
 }
 
 #copyright{
