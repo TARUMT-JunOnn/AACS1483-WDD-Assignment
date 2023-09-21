@@ -8,7 +8,7 @@ console.log(web)
 if (web=="home.html")
 {
     document.getElementById("home").style.backgroundColor = "rgba(237,233,225,1)"
-    //document.getElementById("cartlink").style.display= "block"
+    document.getElementById("cartlink").style.display= "block"
 }
 else if (web=="product.html")
 {
