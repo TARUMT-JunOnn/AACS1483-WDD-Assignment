@@ -15,9 +15,10 @@
             <section id="profile">
             <img id="profilepic" src="profilepic.jpg" alt="Profile Picture" height="38px" weight="38px"/>
             <ul class="submenu">
-                <li class="submenu" id="myorder"><a href="my-order">My Order</a></li>
-                <li class="submenu" id="myadd"><a href="my-address">My Address</a></li>
                 <li class="submenu" id="myacc"><a href="my-acc">My Account</a></li>
+                <li class="submenu" id="myorder"><a href="my-order">My Order</a></li>
+                <li class="submenu" id="mypayment"><a href="payment">My Payment</a></li>
+                <li class="submenu" id="myadd"><a href="my-address">My Address</a></li>
                 <hr>
                 <li class="submenu" id="logout"><a href="home.html">Log Out</a></li>
             </ul>
@@ -25,8 +26,18 @@
             <nav>
                 <ul id="head">
                     <li class="navigation"><a href="home.html" id="home">Home</a></li>
-                    <li class="navigation"><a href="home.html" id="product">Product</a></li>
-                    <li class="navigation"><a href="about-us.html" id="aboutus">About us</a></li>
+                    <li class="navigation"><a href="home.html" id="product">Product</a>
+                        <ul>
+                            <li>Review</li>
+                        </ul>
+                    </li>
+                    <li class="navigation"><a href="about-us.html" id="aboutus">About us</a>
+                        <ul>
+                            <li>FAQ</li>
+                            <li>Contact</li>
+                            <li>Location</li>
+                        </ul>
+                    </li>
                     <li class="navigation"><a href="login sign up.html" id="login">Login / Sign Up</a></li>
                     <script src="design.js"></script>
                 </ul>

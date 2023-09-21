@@ -1,3 +1,34 @@
 #homeFirstimg{
     justify-content: center;
 }
+
+
+#Subcribe{
+    display: block;
+    text-align: center;
+    font: 25px/10px PlayFair, sans-serif;
+    margin: 2%;
+}
+
+#typeEmail{
+    display: flex;
+    justify-content: center;
+}
+
+#emailSub{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#emailButton{
+    width: 60px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#emailButton:active{
+    border: 1px solid white;
+}
