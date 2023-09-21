@@ -13,6 +13,7 @@
 #homeFirst{
     position: relative;
     margin: 2%;
+    margin-bottom: 0%;
 }
 
 #homeFirstimg{
@@ -50,7 +51,7 @@
 #new{
     font: 40px/10px PlayFair, sans-serif;
     text-align: center;
-    margin: 5%;
+    padding: 5%;
 }
 
 #productAll{
@@ -91,7 +92,6 @@
     position: relative;
     margin: 1%;
 }
-
 
 
 #Subcribe{
