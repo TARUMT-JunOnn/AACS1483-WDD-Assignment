@@ -5,10 +5,11 @@ return parts.at(-1);
 
 let web = getLastPart(document.URL)
 console.log(web)
-if (web=="home.html")
+if (web=="index.html")
 {
     document.getElementById("home").style.backgroundColor = "rgba(237,233,225,1)"
-    document.getElementById("cartlink").style.display= "block"
+    //document.getElementById("cartlink").style.display= "block"
+    //document.getElementById("profile").style.display= "flex"
 }
 else if (web=="product.html")
 {

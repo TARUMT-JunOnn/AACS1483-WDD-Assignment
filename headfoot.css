@@ -85,7 +85,7 @@ footer{
 }
 
  #profile{
-    display: flex;
+    display: none;
     justify-content: center;
 }
 
@@ -103,6 +103,13 @@ footer{
     margin-bottom: 1%;
 }
 
+section#introduction {
+    text-align: center;
+}
+
+section#about_us {
+    text-align: center;
+}
 #cartlink{
     position: absolute;
     top: 10%;
