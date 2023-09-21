@@ -43,7 +43,7 @@ li.navigation{
 li.navigation a{
     display: block;
     padding: 3%;
-    transition: background-color 0.8s ease-out;
+    transition: background-color 0.5s ease-out;
     border-radius: 4px;
 }
 
@@ -84,7 +84,7 @@ footer{
     border: 1px solid white;
 }
 
-section{
+ #profile{
     display: flex;
     justify-content: center;
 }
@@ -122,22 +122,21 @@ section{
     right: 20%;
 }
 
-#profilepic:hover+ul.submenu, ul.submenu:hover{
-    display: block;
-}
-
-li.submenu{
-    display: block;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 100%;
+#logout{
+    padding-left: 0%;
+    padding-right: 0%;
+    text-align: center ;
 }
 
 li.submenu a{
-    font-size: 20px;
-    display: block;
     font: 350 15px/normal DidotLT, sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
     width: 100%;
+    padding: 5%;
+    text-align: justify;
+    padding-left: 15%;
 }
 
 ul.submenu{
@@ -146,15 +145,23 @@ ul.submenu{
     position: absolute;
     top: 15%;
     right: 14%;
-    border: 1px solid gray ;
+    border: 1px solid rgba(170, 166, 158,0.7) ;
     width: 8%;
 }
 
-li.submenu a:hover {
-    background-color: #404040;
-    
+img:hover+ul.submenu, ul.submenu:hover{
+    display: block;
+} 
+
+li.submenu{
+    transition: background-color 0.5s ease-out;
 }
 
-#logout{
-    padding-top: 5%;
+li.submenu:hover {
+    background-color: rgba(237,233,225,0.35);
+}
+
+hr{
+    border-top: 0.5px solid gray;
+    width: 75%;
 }
