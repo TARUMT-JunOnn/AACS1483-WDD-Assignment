@@ -4,7 +4,6 @@ return parts.at(-1);
 }
 
 let web = getLastPart(document.URL)
-console.log(web)
 if (web=="index.html")
 {
     document.getElementById("home").style.backgroundColor = "rgba(237,233,225,1)"

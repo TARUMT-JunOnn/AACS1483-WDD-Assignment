@@ -32,7 +32,6 @@ ul#head{
     text-align: center;
 }
 
-
 li.navigation{
     display: block;
     box-sizing: border-box;
@@ -54,6 +53,21 @@ li.navigation a:hover{
 a{
     text-decoration: none;
     color: black;
+}
+
+#productSub, #aboutusSub{
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    background-color: white;
+}
+
+#product:hover+#productSub,#productSub:hover,#aboutus:hover+#aboutusSub,#aboutusSub:hover{
+    display: block;
+}
+
+#productSub a, #aboutusSub a{
+    display: block;
 }
 
 footer{
@@ -119,14 +133,18 @@ li.submenu a{
 ul.submenu{
     list-style-type: none;
     display: none;
+    position: relative;
+}
+
+#profilemenu{
     position: absolute;
     top: 15%;
     right: 14%;
-    border: 1px solid rgba(170, 166, 158,0.7) ;
+    border: 1px solid rgba(170, 166, 158,0.7);
     width: 8%;
 }
 
-img:hover+ul.submenu, ul.submenu:hover{
+img:hover+#profilemenu, #profilemenu:hover{
     display: block;
 } 
 
@@ -141,4 +159,8 @@ li.submenu:hover {
 hr{
     border-top: 0.5px solid gray;
     width: 75%;
+}
+
+main{
+    position: relative;
 }

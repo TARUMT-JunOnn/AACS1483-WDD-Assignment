@@ -10,25 +10,65 @@
     src: url("DidotLTPro.ttf") format("truetype");
 }
 
+body {
+    background-color: rgba(85,78,78,0.1);
+}
+
 div#introduction {
-   margin: 10%;
+   margin: 1%;
    position: relative;
 }
 
 div#border {
     position: absolute;
-    background-color: rgb(255,255,255);
-    padding: 0, 1rem;
+    color: rgb(0,0,0);
+    left: 40rem;
+    top: 18rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 10px;
+    line-height: 25px;
+    font-family: DidotLt;
 }
 
-section#about_us h2,h3,h4{
+div#border2 {
+    position: absolute;
+    color: rgb(0,0,0);
+    right: 30rem;
+    bottom: -20rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 10px;
+    line-height: 25px;
+    font-family: DidotLt;
+}
+
+h1#title {
+    line-height: 70px;
+    font-size: 40px;
+    font-family: PlayFair;
+}
+
+section#about_us h2,h3,h4
+{
     text-align: center;
     font-family: Playfair;
     font-size: 30px;
 }
 
-section#about_us p{
+section#about_us p
+{
     text-align: center;
     font-family: DidotLT;
     font-size: 20px;
+}
+
+div#p_in_img
+{
+    position: absolute;
+    color: rgb(0,0,0);
+    left: 40rem;
+    top: 18rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 10px;
+    line-height: 25px;
+    font-family: DidotLt;
 }

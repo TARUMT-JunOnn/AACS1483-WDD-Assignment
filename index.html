@@ -10,28 +10,38 @@
         <header>
             <h1 id="logoHead"><a href="index.html">CHARLOTTEXY</a></h1>
             <a href="cart.html" id="cartlink">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="cart" viewBox="0 0 16 16" id="cartImg"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+            <svg width="25" height="25" fill="currentColor" class="cart" viewBox="0 0 16 16" id="cartImg"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
             </a>
             <section id="profile">
-            <img id="profilepic" src="profilepic.jpg" alt="Profile Picture" height="38px" weight="38px"/>
-            <ul class="submenu">
-                <li class="submenu" id="myorder"><a href="my-order">My Order</a></li>
-                <li class="submenu" id="myadd"><a href="my-address">My Address</a></li>
-                <li class="submenu" id="myacc"><a href="my-acc">My Account</a></li>
-                <hr>
-                <li class="submenu" id="logout"><a href="index.html">Log Out</a></li>
-            </ul>
-            </section>
-            <nav>
-                <ul id="head">
-                    <li class="navigation"><a href="index.html" id="home">Home</a></li>
-                    <li class="navigation"><a href="home.html" id="product">Product</a></li>
-                    <li class="navigation"><a href="about-us.html" id="aboutus">About us</a></li>
-                    <li class="navigation"><a href="login sign up.html" id="login">Login / Sign Up</a></li>
-                    <script src="design.js"></script>
-                </ul>
-            </nav>
-        </header>
+                <ul class="submenu" id="profilemenu">
+                    <li class="submenu" id="myacc"><a href="my-acc">My Account</a></li>
+                    <li class="submenu" id="myorder"><a href="my-order">My Order</a></li>
+                    <li class="submenu" id="mypayment"><a href="payment">My Payment</a></li>
+                    <li class="submenu" id="myadd"><a href="my-address">My Address</a></li>
+                    <hr>
+                    <li class="submenu" id="logout"><a href="home.html">Log Out</a></li>
+                </ul> 
+                </section>
+                <nav> 
+                    <ul id="head">
+                        <li class="navigation"><a href="home.html" id="home">Home</a></li>
+                        <li class="navigation"><a href="home.html" id="product">Product</a>
+                            <ul class="submenu" id="productSub">
+                                <li><a href="#" id="review">Review</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation"><a href="about-us.html" id="aboutus">About us</a>
+                            <ul class="submenu" id="aboutusSub">
+                                <li><a href="#" id="faq">FAQ</a></li>
+                                <li><a href="#" id="contact">Contact</a></li>
+                                <li><a href="#" id="location">Location</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation"><a href="login sign up.html" id="login">Login / Sign Up</a></li>
+                        <script src="design.js"></script>
+                    </ul>
+                </nav>
+            </header>
         <main>
             <section id="homeFirst">
             <img id="homeFirstimg" src="Background Image.jpg" height="100%" width="100%">
