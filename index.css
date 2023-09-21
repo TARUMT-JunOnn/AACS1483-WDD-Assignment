@@ -1,6 +1,97 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: PlayFair;
+    src: url("PlayfairDisplay-Font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DidotLT;
+    src: url("DidotLTPro.ttf") format("truetype");
+}
+
+#homeFirst{
+    position: relative;
+    margin: 2%;
+}
+
 #homeFirstimg{
     justify-content: center;
 }
+
+#homeFirstword{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+    width: 50%;
+    height: 30%;
+    text-align: center;
+}
+
+#homewelcome{
+    margin: 5%;
+    margin-top: 12%;
+    font: 60px/10px PlayFair, sans-serif;
+}
+
+#homeStart{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    margin-top: 8%;
+    font-family: DidotLT, sans-serif;
+}
+
+#new{
+    font: 40px/10px PlayFair, sans-serif;
+    text-align: center;
+    margin: 5%;
+}
+
+#productAll{
+    background-color: white;
+    position: relative;
+}
+
+#titlebag{
+    font: 25px/10px PlayFair, sans-serif;
+    display: block;
+    padding: 2%;
+    padding-top: 3%;
+    margin-bottom: 1%;
+    display: flex;
+}
+
+#bagcontent{
+    padding-bottom: 2%;
+}
+
+.whiteBag{
+    display: block;
+    width: 22.5%;
+    height: 22.5%;
+    margin: 4%;
+}
+
+#whitebaglink{
+    font: 17px DidotLt, sans-serif;
+}
+
+#whitebaglink:hover{
+    color: #404040;
+}
+
+#bigpic{
+    display: block;
+    position: relative;
+    margin: 1%;
+}
+
 
 
 #Subcribe{

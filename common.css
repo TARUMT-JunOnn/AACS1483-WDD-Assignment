@@ -9,6 +9,7 @@
     font-family: DidotLT;
     src: url("DidotLTPro.ttf") format("truetype");
 }
+
 header{
     padding-bottom: 2%;
 }
@@ -27,9 +28,11 @@ header{
 
 ul#head{
     display: flex;
-    margin: auto 30%;
+    width: 50%;
     margin-top: 5%;
     text-align: center;
+    position: relative;
+    left: 25%;
 }
 
 li.navigation{
@@ -58,7 +61,7 @@ a{
 #productSub, #aboutusSub{
     position: absolute;
     z-index: 1;
-    width: 10%;
+    width: 25%;
     background-color: white;
 }
 
@@ -68,6 +71,7 @@ a{
 
 #productSub a, #aboutusSub a{
     display: block;
+    text-align: center;
 }
 
 footer{
@@ -142,6 +146,8 @@ ul.submenu{
     right: 14%;
     border: 1px solid rgba(170, 166, 158,0.7);
     width: 8%;
+    z-index: 1;
+    background-color: white;
 }
 
 img:hover+#profilemenu, #profilemenu:hover{
@@ -163,4 +169,5 @@ hr{
 
 main{
     position: relative;
+    background-color: rgb(248,248,248);
 }

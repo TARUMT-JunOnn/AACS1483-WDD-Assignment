@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CharllotteXY</title> <!-- 这边填-->
+        <title>CHARLOTTEXY - Home</title> <!-- 这边填-->
         <link href="reset.css" rel="stylesheet" />
-        <link href="headfoot.css" rel="stylesheet" />
+        <link href="common.css" rel="stylesheet" />
         <link href="index.css" rel="stylesheet" />
     </head>
     <body>
@@ -13,19 +13,20 @@
             <svg width="25" height="25" fill="currentColor" class="cart" viewBox="0 0 16 16" id="cartImg"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
             </a>
             <section id="profile">
+                <img id="profilepic" src="profilepic.jpg" alt="Profile Picture" height="38px" weight="38px"/> 
                 <ul class="submenu" id="profilemenu">
                     <li class="submenu" id="myacc"><a href="my-acc">My Account</a></li>
                     <li class="submenu" id="myorder"><a href="my-order">My Order</a></li>
                     <li class="submenu" id="mypayment"><a href="payment">My Payment</a></li>
                     <li class="submenu" id="myadd"><a href="my-address">My Address</a></li>
                     <hr>
-                    <li class="submenu" id="logout"><a href="home.html">Log Out</a></li>
+                    <li class="submenu" id="logout"><a href="index.html">Log Out</a></li>
                 </ul> 
                 </section>
                 <nav> 
                     <ul id="head">
-                        <li class="navigation"><a href="home.html" id="home">Home</a></li>
-                        <li class="navigation"><a href="home.html" id="product">Product</a>
+                        <li class="navigation"><a href="index.html" id="home">Home</a></li>
+                        <li class="navigation"><a href="index.html" id="product">Product</a>
                             <ul class="submenu" id="productSub">
                                 <li><a href="#" id="review">Review</a></li>
                             </ul>
@@ -45,7 +46,28 @@
         <main>
             <section id="homeFirst">
             <img id="homeFirstimg" src="Background Image.jpg" height="100%" width="100%">
+            <div id="homeFirstword">
+                <h2 id="homewelcome">WELCOME</h2>
+                <button id="homeStart" onclick="started()">Get Started</button> 
+            </div>
             </section>
+            <div id="introProduct">
+                <div class="intro" id="new">NEW ARRIVALS</div>
+                    <div id="productAll">
+                        <div class="intro" id="titlebag">BAG</div>
+                        <div class="intro" id="bagcontent">
+                            <div class="whiteBag">
+                                <a href="whitebag.html"><img id="whiteBag" src="White Color Bag.jpg" alt="" height="100%" width="100%"/></a>
+                                <a id="whitebaglink" href="whitebag.html">Versatile Fashion Pure Color Handbag Women High Capacity Bag<br>RM499.00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bigpic">
+                <img id="womanhood" src="Woman In Hood.jpg" alt="" height="800px" width="100%"/>
+            </div>
+            <script src="index.js"></script>
             <form action="#" method="post" id="subcribeus">
                 <label id="Subcribe" for="emailSub">Subscribe Form</label>
                 <section id="typeEmail">
