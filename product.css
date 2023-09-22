@@ -1,0 +1,14 @@
+main > div{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.dir{
+    display: block;
+    position: relative;
+    margin: 2%;
+    width: fit-content;
+    padding-top: 2%;
+}
+
+

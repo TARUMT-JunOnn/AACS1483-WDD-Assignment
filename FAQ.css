@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: PlayFair;
+    src: url("PlayfairDisplay-Font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DidotLT;
+    src: url("DidotLTPro.ttf") format("truetype");
+}
+
+h1 {
+    font-family: Playfair;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2,h3,h4 {
+    font-family: Playfair;
+    font-size: 23px;
+    text-align: center;
+}
+
+p {
+    font-family: DidotLT;
+    font-size: 18px;
+    text-align: center;
+}
