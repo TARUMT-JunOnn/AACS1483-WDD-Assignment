@@ -93,6 +93,37 @@
     margin: 1%;
 }
 
+#brownbag{
+    display: flex;
+}
+
+#brownbagimg{
+    display: block;
+    position: relative;
+    left: 10%;
+    margin: 8%;
+    box-shadow: -20px 20px;
+}
+
+#brownbagtext{
+    display: block;
+    position: relative;
+    height: 40%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#brownbagtitle{
+    margin: 2%;
+    font: 25px DidotLt, sans-serif;
+}
+
+#brownbagcontent{
+    font: 15px DidotLt, sans-serif;
+    width: 25%;
+    margin: auto;
+}
 
 #Subcribe{
     display: block;
