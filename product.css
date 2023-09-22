@@ -1,3 +1,15 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: PlayFair;
+    src: url("PlayfairDisplay-Font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DidotLT;
+    src: url("DidotLTPro.ttf") format("truetype");
+}
+
 main > div{
     margin-left: 2%;
     margin-right: 2%;
@@ -6,9 +18,21 @@ main > div{
 .dir{
     display: block;
     position: relative;
-    margin: 2%;
     width: fit-content;
     padding-top: 2%;
+    font: 18px DidotLT, sans-serif;
 }
+
+#title{
+    display: block;
+    margin-top: 2%;
+}
+
+#titletxt{
+    font: ;
+}
+
+
+
 
 

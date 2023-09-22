@@ -14,55 +14,57 @@ body#main,footer {
     background-color: rgb(248,248,248);
 }
 
+footer {
+    height: 100rem;
+}
+
 div#introduction {
-   margin: 1%;
-   position: relative;
+    margin: 5%;
+    position: relative;
+    top: 4rem;
+    right: -30px;
+
 }
 
 div#border {
     position: absolute;
     color: rgb(0,0,0);
-    left: 40rem;
-    top: 18rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 0 10px;
-    line-height: 25px;
+    left: 37rem;
+    top: 10rem;
+    background-color: rgba(255, 255, 255, 1.0);
+    padding: 70px 148px 70px 50px;
+    line-height: 30px;
     font-family: DidotLt;
+    font-size: 19px;
+}
+
+p#fontsize20 {
+    font-size: 20px;
 }
 
 div#border2 {
     position: absolute;
     color: rgb(0,0,0);
-    right: 30rem;
-    bottom: -20rem;
-    background-color: rgba(255, 255, 255, 0.7);
+    right: 8rem;
+    bottom: -23rem;
     padding: 0 10px;
-    line-height: 25px;
+    line-height: 30px;
     font-family: DidotLt;
 }
 
 h1#title {
-    line-height: 70px;
-    font-size: 40px;
+    line-height: 140px;
+    font-size: 60px;
     font-family: PlayFair;
+    background-color: rgb(255, 255, 255);
+    font-weight: normal;
 }
 
 h2#title{
-    line-height: 70px;
-    font-size: 40px;
+    line-height: 140px;
+    font-size: 41px;
     font-family: PlayFair;
     text-align: center; 
-}
-
-div#border3 {
-    position: absolute;
-    color: rgb(0,0,0);
-    right: 43rem;
-    bottom: -70rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 0 10px;
-    line-height: 25px;
-    font-family: DidotLt;
 }
 
 section#about_us h2,h3,h4
@@ -84,8 +86,9 @@ div#tel_in_img
     position: absolute;
     color: rgb(0,0,0);
     left: 26rem;
-    top: 137rem;
-    padding: 0 10px;
+    top: 100rem;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(255,255,255);
     line-height: 25px;
     font: 20px Calibri;
 }
@@ -99,14 +102,24 @@ div#mail_in_img
 {
     position: absolute;
     color: rgb(0,0,0);
-    left: 34rem;
-    top: -1rem;
-    padding: 0 10px;
+    left: 26rem;
+    top: 0rem;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(255,255,255);
     line-height: 25px;
     font: 20px Calibri;
 }
 
-div#mail_in_img a:hover
-{
+div#mail_in_img a:hover {
     color: darkcyan;
 }
+
+ #footerimg {
+    top: 30rem;
+    position: relative;
+    left: 0rem;
+ }
+
+
+
+ 
