@@ -35,5 +35,5 @@ login.addEventListener("click", function login(){
 })
 
 logout.addEventListener("click", function logout(){
-    localStorage.clear
+    sessionStorage.clear()
 })
