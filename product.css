@@ -115,18 +115,22 @@ hr{
     top: 10%;
 }
 
-
-
 #productline{
     width: 40%;
     margin-left: 0;
 }
 
+#productButton
+{
+    position: relative;
+}
+
 .product{
     display: block;
+    position: relative;
     float: left;
     width: 25%;
-    height: 100%;
+    height: 80%;
     margin-right: 8%;
     margin-bottom: 3%;
     border: 1px solid gray;
@@ -148,12 +152,12 @@ hr{
     height: 50%;
 }
 
-#cartImgproduct{
+.cartImgproduct{
     display: block;
     position: absolute;
     float: right;
-    right: 0;
-    bottom: 0;
+    right: 3%;
+    bottom: 3%;
 }
 
 .logotxt{
@@ -168,12 +172,3 @@ main{
 .producttxt:hover{
     color: #404040;
 }
-
-#caretdown{
-    display: block;
-    position: relative;
-
-    height: 50%;
-    width: 2%;
-}
-

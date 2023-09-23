@@ -1,9 +1,15 @@
 <!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
     <head>
         <style>
-            /* Add some basic CSS styling to make it visually appealing */
-            body 
+            /* 字体和表格大小 */
+            body {
+                font-family: PlayFair;
+                background-color: aliceblue;
+                text-align: canter;
+            }
             .container {
                 max-width: 400px;
                 margin: 0 auto;
@@ -28,14 +34,21 @@
                 border-radius: 3px;
             }
             input[type="Sign Me Up"] {
-                background-color: #007bff;
+                background-color: rgb(253, 246, 213);
                 color: #fff;
                 padding: 10px 20px;
                 border: none;
                 border-radius: 3px;
                 cursor: pointer;
             }
-          
+          /*照片*/
+          .image-container{
+            margin-top: 20px;
+          }
+          .image-container img {
+            max-width: 100%;
+            height: auto;
+          }
             
         </style>
        
@@ -83,7 +96,11 @@
             </header>
         <main>
             <!--Type your code here -->
-        
+
+            <div class="image-container">
+                <img src="Leaf.jpg" alt="Description of the image">
+               </div>
+
            <div class="container">
             <h1>Let's Get Started</h1>
 
@@ -97,7 +114,10 @@
               <input type="password" id="password" name="password" required>
 
                <input type="submit" value="done">
-           
+
+           </div>
+
+          
         </main>
         <footer>
             <h1 class="foot" id="logoFoot"><a href="home.html">CHARLOTTEXY</a></h1>

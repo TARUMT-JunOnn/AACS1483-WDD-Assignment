@@ -1,4 +1,14 @@
 let num = 6
+let product = [0,0,0,0,0,0]
+
+let x = document.getElementsByClassName("cartImgproduct")
+for (let i =0; i < x.length ; i++){
+    x[i].addEventListener('click', function cart(){
+        product[i]++
+        console.log(i +" "+product[i])
+    })
+}
+
 
 function display(){
     document.getElementById("product1").style.display= "block"
@@ -54,6 +64,3 @@ function neck(){
     num = 2
     document.getElementById("countProduct").textContent = num + " Product"
 }
-
-document.getElementById("")
-

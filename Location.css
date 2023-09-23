@@ -29,5 +29,7 @@ h1 {
 
 #location {
     font: 14px Raleway, sans-serif;
+    position: relative;
+    left: 21rem;
     text-align: center;
 }
