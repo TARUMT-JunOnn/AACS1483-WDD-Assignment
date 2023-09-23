@@ -27,9 +27,23 @@ h1 {
     font-weight: lighter;
 }
 
-#location {
+#location1 {
     font: 14px Raleway, sans-serif;
     position: relative;
-    left: 21rem;
+    left: 15rem;
+    text-align: center;
+}
+
+#location2 {
+    font: 14px Raleway, sans-serif;
+    position: relative;
+    left: 35rem;
+    text-align: right;
+}
+
+#location3 {
+    font: 14px Raleway, sans-serif;
+    position: relative;
+    left: 15rem;
     text-align: center;
 }

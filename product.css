@@ -160,6 +160,10 @@ hr{
     bottom: 3%;
 }
 
+.cartImgproduct:active{
+    transform: scale(0.8, 0.8);
+}
+
 .logotxt{
     font: bold 15px Playfair, sans-serif;
     display: inline;
@@ -171,4 +175,8 @@ main{
 
 .producttxt:hover{
     color: #404040;
+}
+
+.plus1{
+    font: 100px PlayFair, sans-serif;
 }
