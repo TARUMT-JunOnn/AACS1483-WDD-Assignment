@@ -7,9 +7,6 @@ createclass.value = "plus1"
 plus1.setAttributeNode(createclass)
 plus1.appendChild(plus1txt)
 
-console.log(plus1)
-
-
 let x = document.getElementsByClassName("cartImgproduct")
 for (let i =0; i < x.length ; i++){
     x[i].addEventListener('click', function cart(){
@@ -17,11 +14,13 @@ for (let i =0; i < x.length ; i++){
         console.log(i +" "+product[i])
         x[i].parentNode.appendChild(plus1)
         const clear = document.getElementsByClassName("plus1")
-        setTimeout(clear.remove(), 3000)
-        
+        console.log(clear)
+        const timeout = function clearfunc(){
+            clear[0].remove()
+        }
+        setTimeout(timeout, 900)
     })
 }
-
 
 function display(){
     document.getElementById("product1").style.display= "block"

@@ -10,6 +10,13 @@
     src: url("DidotLTPro.ttf") format("truetype");
 }
 
+@keyframes animate {
+    from {bottom: 3%;
+        right: 3%;}
+    to {bottom: 10%;
+        right: 3%;}
+}
+
 main > div{
     margin-left: 2%;
     margin-right: 2%;
@@ -106,7 +113,8 @@ hr{
 
 #sort{
     font: 15px DidotLt, sans-serif;
-    display: flex;
+    display: block;
+    cursor: pointer;
 }
 
 #arrowlow{
@@ -158,6 +166,7 @@ hr{
     float: right;
     right: 3%;
     bottom: 3%;
+    cursor: pointer;
 }
 
 .cartImgproduct:active{
@@ -178,5 +187,8 @@ main{
 }
 
 .plus1{
-    font: 100px PlayFair, sans-serif;
+    font: 25px Raleway, sans-serif;
+    position: absolute;
+    z-index: 1;
+    animation: animate 1s linear infinite;
 }

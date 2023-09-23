@@ -1,24 +1,18 @@
-function getLastPart(url) {
-const parts = url.split("/");
-return parts.at(-1);
-}
-
-let web = getLastPart(document.URL)
-if (web=="index.html")
+let web = window.location.pathname
+console.log(web)
+if (web=="/index.html")
 {
     document.getElementById("home").style.backgroundColor = "rgba(237,233,225,1)"
-    //document.getElementById("cartlink").style.display= "block"
-    //document.getElementById("profile").style.display= "flex"
 }
-else if (web=="product.html")
+else if (web  == "/product.html" || web == "/review.html")
 {
     document.getElementById("product").style.backgroundColor = "rgba(237,233,225,1)"
 }
-else if (web=="about-us.html")
+else if (web=="/about-us.html" || web == "/FAQ.html" || web == "/Location.html")
 {
     document.getElementById("aboutus").style.backgroundColor = "rgba(237,233,225,1)"
 }
-else if (web=="login.html")
+else if (web=="/login.html")
 {
     document.getElementById("login").style.backgroundColor = "rgba(237,233,225,1)"
 }
