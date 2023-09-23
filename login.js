@@ -5,8 +5,6 @@ let user = sessionStorage.getItem("user")
 let sumcart = sessionStorage.getItem("sumcart")
 const requiredlogin = "required.html"
 
-console.log(user)
-
 if(user != null){
     document.getElementById("cartlink").style.display= "block"
     document.getElementById("profile").style.display= "flex"
@@ -20,6 +18,12 @@ if(user != null){
     }
 }
 
+logout.addEventListener("click", function logout(){
+    sessionStorage.clear()
+    console.log(sessionStorage.getItem("user"))
+    console.log(sessionStorage.getItem("sumcart"))
+})
+
 login.addEventListener("click", function login(){
     user = account.name
     sumcart = account.sumcart
@@ -32,8 +36,4 @@ login.addEventListener("click", function login(){
         document.getElementById("profile").style.display= "flex"
     }
     window.history.back()
-})
-
-logout.addEventListener("click", function logout(){
-    sessionStorage.clear()
 })
