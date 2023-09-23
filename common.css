@@ -10,6 +10,11 @@
     src: url("DidotLTPro.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: Raleway;
+    src: url("Raleway.ttf") format("truetype");
+}
+
 header{
     padding-bottom: 2%;
 }

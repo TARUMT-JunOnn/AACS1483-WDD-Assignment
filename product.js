@@ -55,7 +55,5 @@ function neck(){
     document.getElementById("countProduct").textContent = num + " Product"
 }
 
-
-
-
+document.getElementById("")
 

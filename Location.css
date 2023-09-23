@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: PlayFair;
+    src: url("PlayfairDisplay-Font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DidotLT;
+    src: url("DidotLTPro.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("Raleway.ttf") format("truetype");
+}
+
+h1 {
+    font: 30px PlayFair,sans-serif;
+    text-align: center;
+
+}
+
+#text_1{
+    font: 16px DidotLT, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#location {
+    font: 14px Raleway, sans-serif;
+    text-align: center;
+}
