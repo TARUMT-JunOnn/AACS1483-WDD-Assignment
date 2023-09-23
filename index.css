@@ -52,6 +52,7 @@
     font: 65px/10px PlayFair, sans-serif;
     text-align: center;
     padding: 5%;
+    background-color: white;
 }
 
 #productAll{
@@ -109,19 +110,16 @@
     display: block;
     position: relative;
     height: 40%;
-    width: 50%;
+    width: 25%;
     margin: auto;
     text-align: center;
-}
-
-#brownbagtitle{
-    margin: 2%;
-    font: 25px DidotLt, sans-serif;
+    background-color: white;
+    padding: 3%;
 }
 
 #brownbagcontent{
-    font: 15px DidotLt, sans-serif;
-    width: 25%;
+    font: 25px DidotLt, sans-serif;
+    width: 100%;
     margin: auto;
 }
 

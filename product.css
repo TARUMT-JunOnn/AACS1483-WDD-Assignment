@@ -78,7 +78,7 @@ hr{
     padding: 0;
 }
 
-#all , #bagbutton, #earing{
+#all , #bagbutton, #earing, #neckless{
     font: 15px DidotLt, sans-serif;
     margin: 2%;
     margin-left: 0;
@@ -125,6 +125,7 @@ hr{
     float: left;
     width: 25%;
     margin-right: 8%;
+    margin-bottom: 3%;
     border: 1px solid gray;
     padding-bottom: 1%;
 }
