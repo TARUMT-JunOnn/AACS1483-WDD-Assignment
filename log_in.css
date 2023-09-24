@@ -15,22 +15,6 @@
     src: url("Raleway.ttf") format("truetype");
 }
 
-#acc1 {
-    text-align: center;
-    font-family: DidotLT,sans-serif;
-    font-size: 26px;
-    position: relative;
-    left: -19.23rem;
-}
-
-#acc2 {
-    text-align: center;
-    font-family: Raleway,sans-serif;
-    font-size: 13px;
-    position: relative;
-    left: -14.68rem;
-}
-
 body {
     font-family: PlayFair;
     background-color: aliceblue;

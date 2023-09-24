@@ -5,10 +5,10 @@ let user = sessionStorage.getItem("user")
 let sumcart = sessionStorage.getItem("sumcart")
 const requiredlogin = "required.html"
 
-if(user != null){
+//if(user != null){
     document.getElementById("cartlink").style.display= "block"
     document.getElementById("profile").style.display= "flex"
-}else{
+/*}else{
     const website = document.getElementsByTagName("a")
     for (let i = 0; i< website.length; i++){
         console.log(website[i].getAttributeNode("href").value)
@@ -16,7 +16,7 @@ if(user != null){
             website[i].getAttributeNode("href").value = requiredlogin
         }
     }
-}
+}*/
 
 logout.addEventListener("click", function logout(){
     sessionStorage.clear()

@@ -17,9 +17,12 @@
             }
 
             #buttonrequired{
-                width:  100%;
+                width:  50%;
+                box-sizing: content-box;
                 margin: 10%;
-                margin-right: 25%;
+                margin-right: 10%;
+                padding-left: 25%;
+                padding-right: 25%;
             }
 
             .buttonrequired{
@@ -28,13 +31,17 @@
                 border: none;
                 border-radius: 10px;
                 margin-right: 20%;
-                margin-left: 5%;
-                padding: 3%;
+                padding: 30px;
                 width: fit-content;
             }
             
             .buttonrequired:hover{
                 background-color: #404040;
+            }
+
+            #requiredtitle{
+                font: 35px PlayFair, sans-serif;
+                text-align: center;
             }
         </style>
     </head>
@@ -77,11 +84,11 @@
             </header>
         <main>
             <div id="forrequired">
-            <div id="requiredtitle">This page is restricted to our member. You're required to login/sign up</div>
-            <div id="buttonrequired">
-            <button id="back" class="buttonrequired" onclick="window.location.href = 'index.html'">Go Back</button>
-            <button id="loginsignup" class="buttonrequired" onclick="window.location.href = 'login.html'">Login / Sign Up</button>
-            </div>
+                <div id="requiredtitle">This page is restricted to our member. You're required to login/sign up</div>
+                <div id="buttonrequired">
+                    <button id="back" class="buttonrequired" onclick="window.location.href = 'index.html'">Go Back</button>
+                    <button id="loginsignup" class="buttonrequired" onclick="window.location.href = 'login.html'">Login / Sign Up</button>
+                </div>
             </div>
         </main>
         <footer>
