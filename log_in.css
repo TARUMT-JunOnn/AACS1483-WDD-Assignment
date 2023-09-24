@@ -16,12 +16,13 @@
 }
 
 body {
-    font-family: PlayFair;
-    background-color: aliceblue;
-    text-align: canter;
+    font-family: PlayFair,sans-serif;
+    text-align: center;
 }
 .container {
-    max-width: 400px;
+    position: relative;
+    top: -47rem;
+    max-width: 350px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -29,10 +30,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-label {
-   width: 100%;
-    
-}
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -42,6 +39,7 @@ input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+
 input[type="Sign Me Up"] {
     background-color: rgb(253, 246, 213);
     color: #fff;
@@ -50,21 +48,19 @@ input[type="Sign Me Up"] {
     border-radius: 3px;
     cursor: pointer;
 }
-/*照片*/
+
+/*image*/
 .image-container{
-position: relative;
-margin-top: 20px;
-}
-.image-container img {
-max-width: 100%;
-height: auto;
+    max-width: fit-content;
+    position: relative;
+    margin-top: 20px;
 }
 
 label.overlap {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(50,-50%);
-z-index: 1;
-background-color: rgba(245, 235, 235, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50,-50%);
+    z-index: 1;
+    background-color: rgba(245, 235, 235, 0.2);
 }

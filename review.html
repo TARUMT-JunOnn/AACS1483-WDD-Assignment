@@ -4,7 +4,7 @@
         <title>CharllotteXY</title> <!-- 这边填-->
         <link href="reset.css" rel="stylesheet" />
         <link href="common.css" rel="stylesheet" />
-        <link href="index.css" rel="stylesheet" />
+        <link href="review.css" rel="stylesheet" />
     </head>
     <body>
         <header>
@@ -43,7 +43,87 @@
                 </nav>
             </header>
         <main>
-                    
+            <div id="titlerange">
+                <div id="titlerangetxt">FEEDBACK & REVIEWS</div>
+                <div id="intheirword">In their words</div>
+                <div id="imgrange"></div>
+                <img id="blueshirtimg" src="blue shirt.png" height="100%" width="100%"/>
+                <div id="addreview">ADD A REVIEW</div>
+                <div id="reviewcaption">How did we do?</div>
+                <div id="reviewform">
+                    <fieldset>
+                    <input type="radio"  class="radio" name="proud" id="beautiful">
+                    <label for="beautiful" class="proud">Beautiful</label>
+                    <input type="radio" class="radio" name="proud" id="welldesign">
+                    <label for="welldesign" class="proud">Well Design</label>
+                    <input type="radio" class="radio" name="proud" id="quality">
+                    <label for="quality" class="proud">Good Quality</label>
+                    <input type="radio" class="radio" name="proud" id="value">
+                    <label for="value" class="proud">Valued</label>
+                    </fieldset>
+                    <textarea cols="8" rows="5" wrap placeholder="Write your opinion here!"></textarea>
+                    <label class="label" for="rating">General Rating</label>
+                    <input type="radio" class="radio1" id="worse"name="rating"/>
+                    <label class="general" for="worse">Poor</label>
+                    <input type="radio" class="radio1" id="normal"name="rating"/>
+                    <label class="general" for="normal">Normal</label>
+                    <input type="radio" class="radio1" id="good" name="rating"/>
+                    <label class="general" for="good">Good</label>
+
+                    <br>
+                    <div class="star">
+                        <label class="label">Match with Described</label>
+                        <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" >5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" >4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" >3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" >2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" >1 star</label>    
+                        </div>               
+                    </div>
+                    <div class="clear">
+                        <div class="star">
+                            <label class="label">Courier Services</label>
+                            <div class="rate">
+                                <input type="radio" id="star10" name="rate2" value="5" />
+                                <label for="star10" >5 stars</label>
+                                <input type="radio" id="star9" name="rate2" value="4" />
+                                <label for="star9" >4 stars</label>
+                                <input type="radio" id="star8" name="rate2" value="3" />
+                                <label for="star8" >3 stars</label>
+                                <input type="radio" id="star7" name="rate2" value="2" />
+                                <label for="star7" >2 stars</label>
+                                <input type="radio" id="star6" name="rate2" value="1" />
+                                <label for="star6" >1 star</label>    
+                            </div>               
+                        </div>
+                    </div>
+                    <div class="clear">    
+                        <div class="star">
+                            <label class="label">Our Services</label>
+                            <div class="rate">
+                                <input type="radio" id="star15" name="rate3" value="5" />
+                                <label for="star15" >5 stars</label>
+                                <input type="radio" id="star14" name="rate3" value="4" />
+                                <label for="star14" >4 stars</label>
+                                <input type="radio" id="star13" name="rate3" value="3" />
+                                <label for="star13" >3 stars</label>
+                                <input type="radio" id="star12" name="rate3" value="2" />
+                                <label for="star12" >2 stars</label>
+                                <input type="radio" id="star11" name="rate3" value="1" />
+                                <label for="star11" >1 star</label>    
+                            </div>               
+                        </div>
+                    </div>
+                    <input type="submit" id="submit"/>
+                    <p id="submited">Thanks for your reviews!</p>
+                </div>
+            </div>
         </main>
         <footer>
             <h1 class="foot" id="logoFoot"><a href="index.html">CHARLOTTEXY</a></h1>

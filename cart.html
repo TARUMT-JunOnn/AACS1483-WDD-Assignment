@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Account</title>
+        <title>CharllotteXY</title> <!-- 这边填-->
         <link href="reset.css" rel="stylesheet" />
         <link href="common.css" rel="stylesheet" />
-        <link href="index.css" rel="stylesheet" />
-        <link href="myacc.css" rel="stylesheet" />
+        <link href="cart.css" rel="stylesheet" />
     </head>
     <body>
         <header>
@@ -40,66 +39,12 @@
                             </ul>
                         </li>
                         <li class="navigation"><a href="login.html" id="login">Login / Sign Up</a></li>
-                        <script src="design.js"></script>
                     </ul>
                 </nav>
             </header>
         <main>
-            <br><br>
-            <h1 id="acc1">My Account</h1>
-            <br>
-            <p id="acc2">View and edit your personal information below.</p>
-            <br><br>
-            <hr>
-            <br><br>
-            <p id="acc3"><u>Account details</u></p>
-            <br>
-            <p id="acc4">Update your account information</p>
-            <br><br><br>
-            <form id="infoform">
-    <h1 id="formHead">Kindly proceed with the completion of the entire profile.</h1>
-    <br>
-    <p>First Name :</p>
-    <input type="text" id="fnameInput" placeholder="Enter your first name" required>
-    <p>Last Name :</p>
-    <input type="text" id="lname" placeholder="Enter your last name" required>
-    <p>Phone Number :</p>
-    <input type="tel" id="numtel" placeholder="Enter your phone number" required>
-
-    <!-- Corrected the function call here -->
-    <button type="button" onclick="saveInfo()">confirm</button>
-    </form>
-    <br><br><hr><br><br>
-    <session id="infoPart">
-        <p id="infoHead"><u>Your information</u></p>
-        <br><br>
-        <h1 id="displayInfo">First Name :</h1>
-        <br>
-        <p id="displayedFirstName"></p>
-        <br>
-        <h2 id="displayInfo">Last name  :</h2>
-        <br>
-        <p id="displayedLastName"></p>
-        <br>
-        <h3 id="displayInfo">Phone number :</h3>
-        <br>
-        <p id="displayedNumTel"></p>
-    </session>
-    <script>
-        function saveInfo() {
-            // Get the name input value
-            var fname = document.getElementById("fnameInput").value;
-            var lname = document.getElementById("lname").value;
-            var numtel = document.getElementById("numtel").value;
-
-            // Display the name
-            document.getElementById("displayedFirstName").innerHTML = "" + fname;
-            document.getElementById("displayedLastName").innerHTML = "" + lname;
-            document.getElementById("displayedNumTel").innerHTML = "" + numtel;
-        }
-    </script>
-            <br><br><hr><br><br><br>
-            <img style="position: relative; left: 7.8rem;" width="75%" src="download (6).png" />
+           <h1 id="carttitle">Shopping Cart</h1>
+           <div id="havecart"></div>
         </main>
         <footer>
             <h1 class="foot" id="logoFoot"><a href="index.html">CHARLOTTEXY</a></h1>
@@ -107,5 +52,7 @@
             <p id="copyright">&copy 2023 CHARLOTTEXY  all right reserved</p>
         </footer>
         <script src="login.js"></script>
+        <script src="design.js"></script>
+        <script src="cart.js"></script>
     </body>
 </html>

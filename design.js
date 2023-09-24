@@ -35,3 +35,13 @@ function contactfunc(){
     window.location.href = "about-us.html"
     sessionStorage.determine = true
 }
+
+const submit = document.getElementById("submit")
+const submited = document.getElementById("submited")
+
+submit.addEventListener("click", submitedfunc)
+
+function submitedfunc(){
+    submited.style.display = "block"
+}
+

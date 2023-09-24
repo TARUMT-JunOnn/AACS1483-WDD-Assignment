@@ -1,0 +1,196 @@
+#titlerange{
+    display: block;
+    margin:0 10%;
+    background-color: white;
+}
+
+main{
+    padding-top: 2%;
+}
+
+#titlerangetxt{
+    padding-top: 5%;
+    font: 30px PlayFair, sans-serif;
+    text-align: center;
+}
+
+#imagerange{
+    height: 300px;
+}
+
+#intheirword{
+    font: 15px DidotLT, sans-serif;
+    margin: 1%;
+    text-align: center;
+}
+
+#blueshirtimg{
+    display: inline;
+}
+
+#addreview{
+    font: 25px PlayFair, sans-serif;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 2%;
+}
+
+#reviewcaption{
+    font: 15px DidotLT, sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.proud{
+    background-color: transparent;
+    border: 1px dotted gray;
+    border-radius: 20px;
+    padding: 0.5% 1%;
+    transform: scale(1.3);
+    margin-right: 5%;
+    transition: background-color ease-out 0.5s;
+    font: 13px DidotLT, sans-serif;
+    cursor: pointer;
+}
+
+.radio:checked+label{
+    background-color: rgba(237,233,225,1);
+}
+
+fieldset{
+    border: none;
+    box-sizing: border-box;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+textarea{
+    width: 80%;
+    height: 100%;
+    margin: 3% 10%;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 20px;
+    border: none;
+    display: block;
+    font: 20px Arial, sans-serif;
+}
+
+.label{
+    margin-left: 20%;
+    margin-top: 500px;
+    font: 20px DidotLT, sans-serif;
+}
+
+.general{
+    border: none;
+    background-color: transparent;
+    transform: scale(1.3);
+    position: relative;
+    left: 20%;
+    font: 15px DidotLT, sans-serif;
+    transition: background-color ease-out 0.5s;
+    margin-right: 5%;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1%;
+}
+
+.radio1:checked + label{
+    background-color: rgba(237,233,225,1);
+}
+
+#reviewform{
+    position: relative;
+}
+
+#star{
+    margin-top: 5%;
+    position: relative;
+}
+
+label[for="describengam"]{
+    margin-left: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    position: absolute;
+    right: 25%;
+    display: inline;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.rate:not(:checked) > label {
+    float: right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.clear{
+    clear: both;
+}
+
+.star, .clear{
+    margin-top: 2%;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font: 15px DidotLT, sans-serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 3%;
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    box-sizing: border-box;
+}
+
+#submited{
+    font: 30px DidotLT, sans-serif;
+    text-align: center;
+    padding-bottom: 3%;
+    display: none;
+}
+
+
+
