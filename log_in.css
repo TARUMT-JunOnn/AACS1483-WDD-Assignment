@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: PlayFair;
+    src: url("PlayfairDisplay-Font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DidotLT;
+    src: url("DidotLTPro.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("Raleway.ttf") format("truetype");
+}
+
+#acc1 {
+    text-align: center;
+    font-family: DidotLT,sans-serif;
+    font-size: 26px;
+    position: relative;
+    left: -19.23rem;
+}
+
+#acc2 {
+    text-align: center;
+    font-family: Raleway,sans-serif;
+    font-size: 13px;
+    position: relative;
+    left: -14.68rem;
+}
+
+body {
+    font-family: PlayFair;
+    background-color: aliceblue;
+    text-align: canter;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+   width: 100%;
+    
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input[type="Sign Me Up"] {
+    background-color: rgb(253, 246, 213);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*照片*/
+.image-container{
+position: relative;
+margin-top: 20px;
+}
+.image-container img {
+max-width: 100%;
+height: auto;
+}
+
+label.overlap {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(50,-50%);
+z-index: 1;
+background-color: rgba(245, 235, 235, 0.2);
+}

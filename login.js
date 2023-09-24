@@ -20,8 +20,6 @@ if(user != null){
 
 logout.addEventListener("click", function logout(){
     sessionStorage.clear()
-    console.log(sessionStorage.getItem("user"))
-    console.log(sessionStorage.getItem("sumcart"))
 })
 
 login.addEventListener("click", function login(){
@@ -35,5 +33,10 @@ login.addEventListener("click", function login(){
         document.getElementById("cartlink").style.display= "block"
         document.getElementById("profile").style.display= "flex"
     }
-    window.history.back()
+    const previousURL = new URL(document.referrer, "http://example.com/")
+    if (previousURL.pathname == "/required.html"){
+        window.location.href = "index.html"
+    }else{
+        window.history.back()
+    }
 })

@@ -6,7 +6,7 @@
         <link href="common.css" rel="stylesheet" />
         <link href="about_us.css" rel="stylesheet" />
     </head>
-    <body>
+    <body onload="determinefunc()">
         <header>
             <h1 id="logoHead"><a href="index.html">CHARLOTTEXY</a></h1>
             <a href="cart.html" id="cartlink">
@@ -15,7 +15,7 @@
             <section id="profile">
                 <img id="profilepic" src="profilepic.jpg" alt="Profile Picture" height="38px" weight="38px"/>
                 <ul class="submenu" id="profilemenu">
-                    <li class="submenu" id="myacc"><a href="my-acc">My Account</a></li>
+                    <li class="submenu" id="myacc"><a href="myacc.html">My Account</a></li>
                     <li class="submenu" id="myorder"><a href="my-order">My Order</a></li>
                     <li class="submenu" id="mypayment"><a href="payment">My Payment</a></li>
                     <li class="submenu" id="myadd"><a href="my-address">My Address</a></li>
@@ -28,7 +28,7 @@
                         <li class="navigation"><a href="index.html" id="home">Home</a></li>
                         <li class="navigation"><a href="product.html" id="product">Product</a>
                             <ul class="submenu" id="productSub">
-                                <li><a href="#" id="review">Review</a></li>
+                                <li><a href="review.html" id="review">Review</a></li>
                             </ul>
                         </li>
                         <li class="navigation"><a href="about-us.html" id="aboutus">About us</a>
@@ -39,7 +39,6 @@
                             </ul>
                         </li>
                         <li class="navigation"><a href="login.html" id="login">Login / Sign Up</a></li>
-                        <script src="design.js"></script>
                     </ul>
                 </nav>
             </header>
@@ -96,5 +95,6 @@
             </section>
         </footer>
         <script src="login.js"></script>
+        <script src="design.js"></script>
     </body>
 </html>

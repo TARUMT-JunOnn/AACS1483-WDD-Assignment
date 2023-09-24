@@ -13,7 +13,7 @@
 @keyframes animate {
     from {bottom: 3%;
         right: 3%;}
-    to {bottom: 10%;
+    to {bottom: 15%;
         right: 3%;}
 }
 
@@ -190,5 +190,5 @@ main{
     font: 25px Raleway, sans-serif;
     position: absolute;
     z-index: 1;
-    animation: animate 1s linear infinite;
+    animation: animate 0.4s linear infinite;
 }

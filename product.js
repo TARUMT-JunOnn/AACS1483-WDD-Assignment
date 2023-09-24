@@ -18,7 +18,7 @@ for (let i =0; i < x.length ; i++){
         const timeout = function clearfunc(){
             clear[0].remove()
         }
-        setTimeout(timeout, 900)
+        setTimeout(timeout, 400)
     })
 }
 

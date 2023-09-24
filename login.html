@@ -1,61 +1,11 @@
 <!DOCTYPE html>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
     <head>
-        <style>
-            /* 字体和表格大小 */
-            body {
-                font-family: PlayFair;
-                background-color: aliceblue;
-                text-align: canter;
-            }
-            .container {
-                max-width: 400px;
-                margin: 0 auto;
-                padding: 20px;
-                background-color: #fff;
-                border-radius: 5px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            }
-         
-            label {
-                display: block;
-                margin-bottom: 8px;
-                
-            }
-            input[type="text"],
-            input[type="email"],
-            input[type="password"] {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 10px;
-                border: 1px solid #ccc;
-                border-radius: 3px;
-            }
-            input[type="Sign Me Up"] {
-                background-color: rgb(253, 246, 213);
-                color: #fff;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 3px;
-                cursor: pointer;
-            }
-          /*照片*/
-          .image-container{
-            margin-top: 20px;
-          }
-          .image-container img {
-            max-width: 100%;
-            height: auto;
-          }
-            
-        </style>
-       
         <title>CharllotteXY</title> <!-- 这边填-->
         <link href="reset.css" rel="stylesheet" />
         <link href="common.css" rel="stylesheet" />
         <link href="index.css" rel="stylesheet" />
+        <link href="log_in.css" rel="stylesheet" />
     </head>
     <body>
         <header>
@@ -66,7 +16,7 @@
             <section id="profile">
                 <img id="profilepic" src="profilepic.jpg" alt="Profile Picture" height="38px" weight="38px"/>
                 <ul class="submenu" id="profilemenu">
-                    <li class="submenu" id="myacc"><a href="my-acc">My Account</a></li>
+                    <li class="submenu" id="myacc"><a href="myacc.html">My Account</a></li>
                     <li class="submenu" id="myorder"><a href="my-order">My Order</a></li>
                     <li class="submenu" id="mypayment"><a href="payment">My Payment</a></li>
                     <li class="submenu" id="myadd"><a href="my-address">My Address</a></li>
@@ -77,9 +27,9 @@
                 <nav> 
                     <ul id="head">
                         <li class="navigation"><a href="index.html" id="home">Home</a></li>
-                        <li class="navigation"><a href="index.html" id="product">Product</a>
+                        <li class="navigation"><a href="product.html" id="product">Product</a>
                             <ul class="submenu" id="productSub">
-                                <li><a href="#" id="review">Review</a></li>
+                                <li><a href="review.html" id="review">Review</a></li>
                             </ul>
                         </li>
                         <li class="navigation"><a href="about-us.html" id="aboutus">About us</a>
@@ -97,9 +47,13 @@
         <main>
             <!--Type your code here -->
 
+
+            
             <div class="image-container">
-                <img src="Leaf.jpg" alt="Description of the image">
-               </div>
+                <img src="Leaf.jpg" alt="Leaf Background" width="75%" height="70%"/>
+            </div>
+           
+              
 
            <div class="container">
             <h1>Let's Get Started</h1>
@@ -120,7 +74,7 @@
           
         </main>
         <footer>
-            <h1 class="foot" id="logoFoot"><a href="home.html">CHARLOTTEXY</a></h1>
+            <h1 class="foot" id="logoFoot"><a href="index.html">CHARLOTTEXY</a></h1>
             <a id="emailCharlotte" href="mailto:charlottexy@gmail.com">charlottexy@gmail.com</a>
             <p id="copyright">&copy 2023 CHARLOTTEXY  all right reserved</p>
         </footer>
