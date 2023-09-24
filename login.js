@@ -1,6 +1,6 @@
 const login = document.getElementById("loginbutton")
 const logout = document.getElementById("logout")
-account = {name: "Admin", sumcart: "0"}
+account = {name: "Admin", sumcart: "1"}
 let user = sessionStorage.getItem("user")
 let sumcart = sessionStorage.getItem("sumcart")
 const requiredlogin = "required.html"

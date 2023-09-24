@@ -2,3 +2,113 @@
     font: 30px Playfair, sans-serif;
     padding: 2%;
 }
+
+#nocart{
+    display: none;
+}
+
+#nocarttxt{
+    text-align: center;
+    font: 25px DidotLT, sans-serif;
+    margin-top: 15%;
+}
+
+#havecart{
+    margin: 0 2%;
+    display: flex;
+}
+
+#gotocart{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 30px 15px;
+    width: 12%;
+    margin: 2% 44% 15% 44%;
+    font: 15px DidotLT, sans-serif;
+}
+
+#product{
+    width: 55%;
+    content: "";
+    clear: both;
+    display: table;
+    flex: 55%;
+}
+
+.product{
+    border: 1px solid black;
+    margin-bottom: 3%;
+}
+
+.productimg{
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+
+.txtpart{
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap;
+    font: 15px DidotLT, sans-serif;
+}
+
+.logotxt{
+    font: Bold 15px PlayFair, sans-serif;
+}
+
+.productname{
+    flex: 60%;
+}
+
+.productprice{
+    flex: 30%;
+}
+
+.cancel{
+    flex: 10%;
+    text-align: right;
+}
+
+.stock{
+    margin: 10% 0;
+    flex: 100%;
+}
+
+.quantity{
+    padding: 2%;
+    width: 20%;
+    border-color: gray;
+    background-color: rgba(237,233,225,0.1);
+}
+
+#checkout{
+    width: 45%;
+    flex: 45%;
+    padding-left: 2%;
+    font: 15px Arial, sans-serif;
+    position: relative;
+}
+
+#checkouttitle{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    padding: 3%;
+    padding-top: 5%;
+    z-index: 1;
+}
+
+#shadow{
+    border: 1px solid black;
+    width: 95%;
+    height: 26%;
+    position: absolute;
+    top: 3%;
+    right: -1%;
+}
+
+
+
