@@ -1,6 +1,6 @@
 let web = window.location.pathname
 const contactimg = document.getElementById("footerimg")
-let determine = sessionStorage.getItem("determine")
+let determine = localStorage.getItem("determine")
 console.log(determine)
 function determinefunc(){
     console.log("YES")
@@ -8,7 +8,7 @@ function determinefunc(){
         contactimg.scrollIntoView({behavior :"smooth", 
         block: 'center',
         inline: 'center'});
-        sessionStorage.removeItem("determine");
+        localStorage.removeItem("determine");
     }
 }
 if (web=="/index.html")
@@ -33,7 +33,7 @@ contact.addEventListener("click", contactfunc)
 
 function contactfunc(){
     window.location.href = "about-us.html"
-    sessionStorage.determine = true
+    localStorage.determine = true
 }
 
 const submit = document.getElementById("submit")
@@ -44,4 +44,5 @@ submit.addEventListener("click", submitedfunc)
 function submitedfunc(){
     submited.style.display = "block"
 }
+
 

@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: PlayFair;
+    src: url("PlayfairDisplay-Font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DidotLT;
+    src: url("DidotLTPro.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("Raleway.ttf") format("truetype");
+}
+
+#odr1 {
+    text-align: center;
+    font-family: DidotLT,sans-serif;
+    font-size: 28px;
+    position: relative;
+    left: -18.9rem;
+}
+
+#odr2 {
+    text-align: center;
+    font-family: Raleway,sans-serif;
+    font-size: 13px;
+    position: relative;
+    left: -14.68rem;
+}
+
+#odr3 {
+    text-align: center;
+    font-family: Raleway,sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    position: relative;
+    left: -19.7rem;
+}
+
+#odr4 {
+    text-align: center;
+    font-family: Raleway,sans-serif;
+    font-size: small;
+    position: relative;
+    left: -17.1rem;
+}
+
+#infoform {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+   width: 100%;
+    
+}
+
+input[type="text"],
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#formHead{
+    font-family: DidotLT,sans-serif;
+}
+
+#infoHead{
+    font-family: PlayFair,sans-serif;
+    font-size: large;
+    position: relative;
+    font-weight: bold;
+    left: 7.7rem;
+}
+
+#displayInfo{
+    font-family: Raleway,sans-serif;
+    font-size: large;
+    position: relative;
+    left: 7.9rem;
+}
+
+#displayedFirstName,
+#displayedLastName,
+#displayedNumTel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    position: relative;
+    left: 7.9rem;
+}

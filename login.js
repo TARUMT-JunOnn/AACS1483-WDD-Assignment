@@ -1,25 +1,33 @@
 const login = document.getElementById("loginbutton")
 const logout = document.getElementById("logout")
-account = {name: "Admin", sumcart: "1"}
-let user = sessionStorage.getItem("user")
-let sumcart = sessionStorage.getItem("sumcart")
+account = {name: "Admin", sumcart: "0"}
+let user = localStorage.getItem("user")
+let sumcart = localStorage.getItem("sumcart")
+const loginnav = document.getElementById("login")
 const requiredlogin = "required.html"
 
 //if(user != null){
     document.getElementById("cartlink").style.display= "block"
     document.getElementById("profile").style.display= "flex"
-/*}else{
+/*    loginnav.innerHTML = "My Account"
+    loginnav.getAttributeNode("href").value = "myacc.html"
+}else{
+    loginnav.innerHTML = "Login / Sign Up"
+    loginnav.getAttributeNode("href").value = "login.html"
     const website = document.getElementsByTagName("a")
     for (let i = 0; i< website.length; i++){
-        console.log(website[i].getAttributeNode("href").value)
         if(website[i].getAttributeNode("href").value != "index.html" && website[i].getAttributeNode("href").value != "login.html" && website[i].getAttributeNode("href").value != "mailto:charlottexy@gmail.com"){
             website[i].getAttributeNode("href").value = requiredlogin
         }
     }
 }*/
+function editfunc(){
+    console.log("Hello")
+    window.location.href = "myaddress.html"
+}
 
 logout.addEventListener("click", function logout(){
-    sessionStorage.clear()
+    localStorage.clear()
 })
 
 login.addEventListener("click", function login(){
@@ -27,8 +35,8 @@ login.addEventListener("click", function login(){
     sumcart = account.sumcart
     console.log(user)
     console.log(sumcart)
-    sessionStorage.user = user
-    sessionStorage.sumcart = sumcart
+    localStorage.user = user
+    localStorage.sumcart = sumcart
     if(user != null){
         document.getElementById("cartlink").style.display= "block"
         document.getElementById("profile").style.display= "flex"

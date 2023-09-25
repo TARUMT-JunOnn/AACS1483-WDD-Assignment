@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: PlayFair;
+    src: url("PlayfairDisplay-Font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DidotLT;
+    src: url("DidotLTPro.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("Raleway.ttf") format("truetype");
+}
+
+#paymentHead
+{
+    font-family: DidotLT,sans-serif;
+    font-size: 28px;
+    position: relative;
+    left: 8rem;
+}
+
+#paymentsmall
+{
+    font-family: Raleway,sans-serif;
+    font-size: 13px;
+    position: relative;
+    left: 7.8rem;
+}
+
+#paymentdetails
+{
+    font-family: Raleway,sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    position: relative;
+    left: 8rem;
+}
+
+#address
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    left: 3rem;
+}
+
+#formHead
+{
+    font-family: Raleway,sans-serif;
+    background-color: lightgray;
+}
+
+#paymentform {
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    left: -12.6rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#formHead2
+{
+    font-family: Raleway,sans-serif;
+    font-weight: bold;
+}
+
+#form
+{
+    font-family: Calibri, sans-serif;
+}
+
+#form2
+{
+    font-family: Calibri, sans-serif;
+    font-weight: lighter;
+    font-size: small;
+}
+
+#paymentForm2 {
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    left: -12.6rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#sencondFormHead
+{
+    font-family: Raleway,sans-serif;
+    font-weight: bold;
+}
+
+#method
+{
+    font-family: Raleway,sans-serif;
+    font-size: small;
+}
+
+#border {
+    max-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    left: 12rem;
+    top: -9.8rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

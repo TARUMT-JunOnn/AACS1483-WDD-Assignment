@@ -1,5 +1,6 @@
 let num = 6
-let product = [0,0,0,0,0,0]
+let product = [localStorage.getItem("product1"), localStorage.getItem("product2"), localStorage.getItem("product3"), localStorage.getItem("product4"), localStorage.getItem("product5"), localStorage.getItem("product6")]
+let totalcart = localStorage.getItem("sumcart")
 const plus1txt = document.createTextNode("+1")
 const plus1 = document.createElement("p")
 const createclass = document.createAttribute("class")
@@ -11,10 +12,23 @@ let x = document.getElementsByClassName("cartImgproduct")
 for (let i =0; i < x.length ; i++){
     x[i].addEventListener('click', function cart(){
         product[i]++
-        console.log(i +" "+product[i])
+        totalcart++
+        if (i == 0){
+        localStorage.product1 = product[i]
+        }else if (i == 1){
+        localStorage.product2 = product[i]
+        }else if (i == 2){
+        localStorage.product3 = product[i]
+        }else if (i == 3){
+        localStorage.product4 = product[i]
+        }else if (i == 4){
+        localStorage.product5 = product[i]
+        }else if (i == 5){
+        localStorage.product6 = product[i]
+        }
+        localStorage.sumcart = totalcart
         x[i].parentNode.appendChild(plus1)
         const clear = document.getElementsByClassName("plus1")
-        console.log(clear)
         const timeout = function clearfunc(){
             clear[0].remove()
         }

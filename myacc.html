@@ -17,9 +17,9 @@
                 <img id="profilepic" src="profilepic.jpg" alt="Profile Picture" height="38px" weight="38px"/>
                 <ul class="submenu" id="profilemenu">
                     <li class="submenu" id="myacc"><a href="myacc.html">My Account</a></li>
-                    <li class="submenu" id="myorder"><a href="my-order">My Order</a></li>
-                    <li class="submenu" id="mypayment"><a href="payment">My Payment</a></li>
-                    <li class="submenu" id="myadd"><a href="my-address">My Address</a></li>
+                    <li class="submenu" id="myorder"><a href="myorder.html">My Order</a></li>
+                    <li class="submenu" id="mypayment"><a href="mypayment.html">My Payment</a></li>
+                    <li class="submenu" id="myadd"><a href="myaddress.html">My Address</a></li>
                     <hr>
                     <li class="submenu" id="logout"><a href="index.html">Log Out</a></li>
                 </ul> 
@@ -56,20 +56,20 @@
             <br>
             <p id="acc4">Update your account information</p>
             <br><br><br>
-            <form id="infoform">
-    <h1 id="formHead">Kindly proceed with the completion of the entire profile.</h1>
-    <br>
-    <p>First Name :</p>
-    <input type="text" id="fnameInput" placeholder="Enter your first name" required>
-    <p>Last Name :</p>
-    <input type="text" id="lname" placeholder="Enter your last name" required>
-    <p>Phone Number :</p>
-    <input type="tel" id="numtel" placeholder="Enter your phone number" required>
+                <form id="infoform">
+                <h1 id="formHead">Kindly proceed with the completion of the entire profile.</h1>
+                <br>
+                <p>First Name :</p>
+                <input type="text" id="fnameInput" placeholder="Enter your first name" required>
+                <p>Last Name :</p>
+                <input type="text" id="lname" placeholder="Enter your last name" required>
+                <p>Phone Number :</p>
+                <input type="tel" id="numtel" placeholder="Enter your phone number" required>
 
-    <!-- Corrected the function call here -->
-    <button type="button" onclick="saveInfo()">confirm</button>
-    </form>
-    <br><br><hr><br><br>
+                <!-- Corrected the function call here -->
+                <button type="button" onclick="saveInfo()">confirm</button>
+                </form>
+        <br><br><hr><br><br>
     <session id="infoPart">
         <p id="infoHead"><u>Your information</u></p>
         <br><br>
@@ -98,6 +98,23 @@
             document.getElementById("displayedNumTel").innerHTML = "" + numtel;
         }
     </script>
+    <!--<script>
+    function saveInfo() {
+        // Get the name input values
+        var fname = document.getElementById("fnameInput").value;
+        var lname = document.getElementById("lname").value;
+        var numtel = document.getElementById("numtel").value;
+
+        // Save the data to localStorage
+        localStorage.setItem("firstName", fname);
+        localStorage.setItem("lastName", lname);
+        localStorage.setItem("numTel", numtel);
+
+        // Redirect to another page
+        window.location.href = "page2.html";
+    }
+</script>
+-->
             <br><br><hr><br><br><br>
             <img style="position: relative; left: 7.8rem;" width="75%" src="download (6).png" />
         </main>

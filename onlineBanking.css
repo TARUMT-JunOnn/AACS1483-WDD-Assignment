@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: PlayFair;
+    src: url("PlayfairDisplay-Font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DidotLT;
+    src: url("DidotLTPro.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("Raleway.ttf") format("truetype");
+}
+
+#head {
+    text-align: center;
+    font-size: larger;
+}
+
+#onlineForm {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#bank {
+    position: relative;
+    left: 13.3rem;
+}

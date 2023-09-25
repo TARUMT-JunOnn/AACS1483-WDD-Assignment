@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: PlayFair;
+    src: url("PlayfairDisplay-Font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DidotLT;
+    src: url("DidotLTPro.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("Raleway.ttf") format("truetype");
+}
+
+#title{
+    padding: 2%;
+    padding-bottom: 2%;
+    font: 30px PlayFair, sans-serif;
+}
+
+#name, #email{
+    font: 30px DidotLT, sans-serif;
+    text-align: center;
+}
+
+#namecontent,#emailcontent{
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    background-color: white;
+    padding: 2%;
+    margin: 0 2%;
+    margin-left: -35%;
+}
+
+#address{
+    position: relative;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+    font: 20px DidotLT, sans-serif;
+    width: 80%;
+}
+
+input[type="text"]#newaddress {
+    padding: 15px;
+    border-color: grey;
+    width: 60%;
+}
+
+#newaddress{
+    margin-top: 3%;
+}
+
+input[type="text"] {
+    width: 40%;
+    font: 18px PlayFair, sans-serif;
+    text-align: left;
+}
+
+::placeholder {
+    text-align: left;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+#okay{
+    text-align: center;
+    font: 30px PlayFair, sans-serif;
+    margin-top: 2%;
+    display: none;
+}

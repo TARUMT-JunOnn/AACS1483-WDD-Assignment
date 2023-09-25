@@ -16,9 +16,9 @@
                 <img id="profilepic" src="profilepic.jpg" alt="Profile Picture" height="38px" weight="38px"/>
                 <ul class="submenu" id="profilemenu">
                     <li class="submenu" id="myacc"><a href="myacc.html">My Account</a></li>
-                    <li class="submenu" id="myorder"><a href="my-order">My Order</a></li>
-                    <li class="submenu" id="mypayment"><a href="payment">My Payment</a></li>
-                    <li class="submenu" id="myadd"><a href="my-address">My Address</a></li>
+                    <li class="submenu" id="myorder"><a href="myorder.html">My Order</a></li>
+                    <li class="submenu" id="mypayment"><a href="mypayment.html">My Payment</a></li>
+                    <li class="submenu" id="myadd"><a href="myaddress.html">My Address</a></li>
                     <hr>
                     <li class="submenu" id="logout"><a href="index.html">Log Out</a></li>
                 </ul> 
@@ -43,39 +43,149 @@
                 </nav>
             </header>
         <main>
-           <h1 id="carttitle">Shopping Cart</h1>
-           <div id="havecart">
-            <div id="product">
-                <div class="product">
-                    <img class="productimg" src="White Color Bag.jpg" width="100%" height="100%"/>
-                    <div class="txtpart">
-                        <div class="productname"><span class="logotxt">CHARLOTTEXY&nbsp;</span>Sandy Casket</div>
-                        <div class="productprice">RM299.99</div>
-                        <div class="cancel">X</div>
-                        <div class="stock">Now in Stock</div>
-                        <select class="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select>
+            <h1 id="carttitle">Shopping Cart</h1>
+            <div id="havecart">
+                <div id="productfield">
+                    <div class="product" id="product1">
+                        <img class="productimg" src="White Color Bag.jpg" width="100%" height="100%"/>
+                        <div class="txtpart">
+                            <div class="productname"><span class="logotxt">CHARLOTTEXY&nbsp;</span>Whitty Sparks</div>
+                            <div class="productprice">RM499.99</div>
+                            <div class="cancel" id="1">X</div>
+                            <div class="stock">Now in Stock</div>
+                            <select class="quantity" id="select1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product" id="product2">
+                        <img class="productimg" src="colorbag.jpg" width="100%" height="100%"/>
+                        <div class="txtpart">
+                            <div class="productname"><span class="logotxt">CHARLOTTEXY&nbsp;</span>Sandy Casket</div>
+                            <div class="productprice">RM499.99</div>
+                            <div class="cancel" id="2">X</div>
+                            <div class="stock">Now in Stock</div>
+                            <select class="quantity" id="select2">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product" id="product3">
+                        <img class="productimg" src="Silver Pearl Earrings.jpg" width="100%" height="100%"/>
+                        <div class="txtpart">
+                            <div class="productname"><span class="logotxt">CHARLOTTEXY&nbsp;</span>Sil'Houke</div>
+                            <div class="productprice">RM499.99</div>
+                            <div class="cancel" id="3">X</div>
+                            <div class="stock">Now in Stock</div>
+                            <select class="quantity" id="select3">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product" id="product4">
+                        <img class="productimg" src="earing gold.jpg" width="100%" height="100%"/>
+                        <div class="txtpart">
+                            <div class="productname"><span class="logotxt">CHARLOTTEXY&nbsp;</span>Danglin' Charms</div>
+                            <div class="productprice">RM499.99</div>
+                            <div class="cancel" id="3">X</div>
+                            <div class="stock">Now in Stock</div>
+                            <select class="quantity" id="select4">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product" id="product5">
+                        <img class="productimg" src="Black Sample Neck with Pearl Necklace.jpg" width="100%" height="100%"/>
+                        <div class="txtpart">
+                            <div class="productname"><span class="logotxt">CHARLOTTEXY&nbsp;</span>Dazzle Silvery</div>
+                            <div class="productprice">RM499.99</div>
+                            <div class="cancel" id="3">X</div>
+                            <div class="stock">Now in Stock</div>
+                            <select class="quantity" id="select5">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product" id="product6">
+                        <img class="productimg" src="necklessgold.jpg" width="100%" height="100%"/>
+                        <div class="txtpart">
+                            <div class="productname"><span class="logotxt">CHARLOTTEXY&nbsp;</span>Glover's Bless</div>
+                            <div class="productprice">RM299.99</div>
+                            <div class="cancel" id="3">X</div>
+                            <div class="stock">Now in Stock</div>
+                            <select class="quantity" id="select6">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-           </div>
-           <div id="checkout">
-            <div id="checkouttitle">CHECKOUT</div>
-            <div id="shadow"></div>
-        </div>
-           <div id="nocart">
-            <div id="nocarttxt">Looks like you have'nt add a product to cart, please try again after added a product.</div>
-            <button id="gotocart" onclick="window.location.href = 'product.html'">Go to Product</button>
-           </div>
+                <div id="checkout">
+                    <div id="checkouttitle">CHECKOUT<span>→</span></div>
+                    <div id="ordersummary" class="padding">ORDER SUMMARY&nbsp;|&nbsp;<span id="items">1 Items</span></div>
+                    <div id="itemsubtotal" class="padding">ITEM(S) SUBTOTAL<span class="price" id="itemsubtotalvalue">RM299.99</span></div>
+                    <div id="delivery" class="padding">DELIVERY<span class="price">RM8.00</span></div>
+                    <div id="subtotal" class="padding">SUB TOTAL<span class="price" id="subtotalvalue">RM299.99</span></div>
+                    <div id="ordertotal" class="padding">ORDER TOTAL<span class="price" id="ordertotalvalue">RM307.99</span></div>
+                </div>
+            </div>
+            <div id="nocart">
+                <div id="nocarttxt">Looks like you have'nt add a product to cart, please try again after added a product.</div>
+                <button id="gotocart" onclick="window.location.href = 'product.html'">Go to Product</button>
+            </div>
         </main>
         <footer>
             <h1 class="foot" id="logoFoot"><a href="index.html">CHARLOTTEXY</a></h1>

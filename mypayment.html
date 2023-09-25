@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CharllotteXY</title> <!-- 这边填-->
+        <link href="reset.css" rel="stylesheet" />
+        <link href="common.css" rel="stylesheet" />
+        <link href="index.css" rel="stylesheet" />
+        <link href="mypayment.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 id="logoHead"><a href="index.html">CHARLOTTEXY</a></h1>
+            <a href="cart.html" id="cartlink">
+            <svg width="25" height="25" fill="currentColor" class="cart" viewBox="0 0 16 16" id="cartImg"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+            </a>
+            <section id="profile">
+                <img id="profilepic" src="profilepic.jpg" alt="Profile Picture" height="38px" weight="38px"/>
+                <ul class="submenu" id="profilemenu">
+                    <li class="submenu" id="myacc"><a href="myacc.html">My Account</a></li>
+                    <li class="submenu" id="myorder"><a href="myorder.html">My Order</a></li>
+                    <li class="submenu" id="mypayment"><a href="mypayment.html">My Payment</a></li>
+                    <li class="submenu" id="myadd"><a href="myaddress.html">My Address</a></li>
+                    <hr>
+                    <li class="submenu" id="logout"><a href="index.html">Log Out</a></li>
+                </ul> 
+                </section>
+                <nav> 
+                    <ul id="head">
+                        <li class="navigation"><a href="index.html" id="home">Home</a></li>
+                        <li class="navigation"><a href="product.html" id="product">Product</a>
+                            <ul class="submenu" id="productSub">
+                                <li><a href="review.html" id="review">Review</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation"><a href="about-us.html" id="aboutus">About us</a>
+                            <ul class="submenu" id="aboutusSub">
+                                <li><a href="FAQ.html" id="faq">FAQ</a></li>
+                                <li><a href="#" id="contact">Contact</a></li>
+                                <li><a href="Location.html" id="location">Location</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation"><a href="login.html" id="login">Login / Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <main>
+            <h1 id="paymentHead">Payment</h1>
+            <br>
+            <p id="paymentsmall">Complete your payment process here.</p>
+            <br><br>
+            <hr>
+            <br><br>
+            <p id="paymentdetails"><u>Payment details</u></p>
+            <br>
+            <form id="paymentform">
+                <h1 id="formHead">1. SHIPPING ADDRESS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="myaddress.html" id="editLink">Edit</a>
+                </h1>
+                <br><br><br>
+                <hr>
+                <h2 id="formHead2">DELIVERY DATE</h2>
+                
+                <p id="form">Estimated delivery time : 2 ~ 7 days
+            </form>
+            <br>
+            <form id="paymentForm2">
+                <div id="formHead">
+                    <h1 id="sencondFormHead">2. PAYMENT OPTION<h1>
+                    <p id="form2">Please select your payment method</p>
+                </div>
+                <br>
+                <session>
+                    <label>
+                        <input type="radio" name="paymentMethod" value="Credit/Debit Card" id="creditCardRadio" />
+                        Credit/Debit Card
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="paymentMethod" value="TNG eWallet" id="tngEWalletRadio" />
+                        TNG eWallet
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="paymentMethod" value="Online Banking" id="onlineBankingRadio" />
+                        Online Banking
+                    </label>
+                </session>
+                
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                    const creditCardRadio = document.getElementById("creditCardRadio");
+                    const tngEWalletRadio = document.getElementById("tngEWalletRadio");
+                    const onlineBankingRadio = document.getElementById("onlineBankingRadio");
+
+                    creditCardRadio.addEventListener("change", function () {
+                        if (creditCardRadio.checked) {
+                            window.location.href = "creditCard.html";
+                        }
+                    });
+
+                    tngEWalletRadio.addEventListener("change", function () {
+                        if (tngEWalletRadio.checked) {
+                            window.location.href = "TNG_eWallet.html";
+                        }
+                    });
+
+                    onlineBankingRadio.addEventListener("change", function () {
+                        if (onlineBankingRadio.checked) {
+                            window.location.href = "onlineBanking.html";
+                        }
+                    });
+                });
+                </script>
+            </form>
+            <!--<button id="address">Please fill in your address</button>-->
+            <br><br>
+            <hr>
+            <br>
+            <!--<script>
+                // Get the button element by its ID
+                var address = document.getElementById("address");
+            
+                // Add a click event listener to the button
+                address.addEventListener("click", function() {
+                // Redirect to another page
+                window.location.href = "myaddress.html"; // Replace "anotherpage.html" with the URL of the page you want to go to
+                });
+            </script>-->
+            
+        </main>
+        <footer>
+            <h1 class="foot" id="logoFoot"><a href="index.html">CHARLOTTEXY</a></h1>
+            <a id="emailCharlotte" href="mailto:charlottexy@gmail.com">charlottexy@gmail.com</a>
+            <p id="copyright">&copy 2023 CHARLOTTEXY  all right reserved</p>
+        </footer>
+        <script src="login.js"></script>
+        <script src="design.js"></script>
+    </body>
+</html>

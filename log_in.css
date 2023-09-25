@@ -21,31 +21,36 @@ body {
 }
 .container {
     position: relative;
-    top: -47rem;
-    max-width: 350px;
+    min-height: 450px;
+    top: -62rem;
+    max-width: 400px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 36%;
+    margin-left: 45%;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    width: 85%;
+    padding: 15px;
+    margin: 5%;
+    margin-bottom: 40px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 input[type="Sign Me Up"] {
-    background-color: rgb(253, 246, 213);
-    color: #fff;
+    background-color: rgb(244, 243, 239);
+    color: #0e0c0c;
     padding: 10px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5%;
     cursor: pointer;
 }
 
@@ -53,7 +58,8 @@ input[type="Sign Me Up"] {
 .image-container{
     max-width: fit-content;
     position: relative;
-    margin-top: 20px;
+    padding-top: 6%;
+    margin-left: 6%;
 }
 
 label.overlap {

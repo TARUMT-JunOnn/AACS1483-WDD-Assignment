@@ -1,49 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CharllotteXY</title> <!-- 这边填-->
+        <title>My Order</title>
         <link href="reset.css" rel="stylesheet" />
         <link href="common.css" rel="stylesheet" />
         <link href="index.css" rel="stylesheet" />
-        <style>
-            main{
-                display: block;
-           }
-            #forrequired{
-                display: block;
-                width: fit-content;
-                margin: auto;
-                padding: 20% 0;
-            }
-
-            #buttonrequired{
-                width:  50%;
-                box-sizing: content-box;
-                margin: 10%;
-                margin-right: 10%;
-                padding-left: 25%;
-                padding-right: 25%;
-            }
-
-            .buttonrequired{
-                color: white;
-                background-color: black;
-                border: none;
-                border-radius: 10px;
-                margin-right: 20%;
-                padding: 30px;
-                width: fit-content;
-            }
-            
-            .buttonrequired:hover{
-                background-color: #404040;
-            }
-
-            #requiredtitle{
-                font: 35px PlayFair, sans-serif;
-                text-align: center;
-            }
-        </style>
+        <link href="myorder.css" rel="stylesheet" />
     </head>
     <body>
         <header>
@@ -82,20 +44,30 @@
                     </ul>
                 </nav>
             </header>
-        <main>
-            <div id="forrequired">
-                <div id="requiredtitle">This page is restricted to our member. You're required to login/sign up</div>
-                <div id="buttonrequired">
-                    <button id="back" class="buttonrequired" onclick="window.location.href = 'index.html'">Go Back</button>
-                    <button id="loginsignup" class="buttonrequired" onclick="window.location.href = 'login.html'">Login / Sign Up</button>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <h1 class="foot" id="logoFoot"><a href="index.html">CHARLOTTEXY</a></h1>
-            <a id="emailCharlotte" href="mailto:charlottexy@gmail.com">charlottexy@gmail.com</a>
-            <p id="copyright">&copy 2023 CHARLOTTEXY  all right reserved</p>
-        </footer>
-        <script src="login.js"></script>
-    </body>
-</html>
+            <main>
+                <br><br>
+                <h1 id="odr1">My Order</h1>
+                <br>
+                <p id="odr2">Order history and recent order status</p>
+                <br><br>
+                <hr>
+                <br><br>
+                <p id="odr3"><u>Order details</u></p>
+                <br>
+                <p id="odr4">You havent buy any thing yet</p>
+                <br>
+              
+                
+    
+            </main>      
+            
+            
+
+            <footer>
+                <h1 class="foot" id="logoFoot"><a href="index.html">CHARLOTTEXY</a></h1>
+                <a id="emailCharlotte" href="mailto:charlottexy@gmail.com">charlottexy@gmail.com</a>
+                <p id="copyright">&copy 2023 CHARLOTTEXY  all right reserved</p>
+            </footer>
+            <script src="login.js"></script>
+        </body>
+    </html>
