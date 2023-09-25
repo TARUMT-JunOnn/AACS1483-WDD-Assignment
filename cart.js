@@ -15,15 +15,6 @@ let ordervalue
 const order = document.getElementById("ordertotalvalue")
 const checkout = document.getElementById("checkouttitle")
 
-product = product.map(function(str) {
-
-return parseInt(str); });
-
-for (let i =0;i<6;i++){
-    currentcart += (product[i])
-}
-
-
 if(currentcart == 0 || currentcart == null){
     contentyes.style.display = "none"
     contentno.style.display = "block"
@@ -31,6 +22,15 @@ if(currentcart == 0 || currentcart == null){
     contentno.style.display = "none "
     contentyes.style.display = "flex"
 }
+
+product = product.map(function(str) {
+
+    return parseInt(str); });
+    
+    for (let i =0;i<6;i++){
+        currentcart += (product[i])
+    }
+    
 
 if(product[0] > 0){
     document.getElementById("product1").style.display = "block"
