@@ -119,3 +119,13 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+#addresspayment{
+    background-color: transparent;
+    border: none;
+    resize: none;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 2%;
+    color: black;
+}

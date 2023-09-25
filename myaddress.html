@@ -7,7 +7,7 @@
         <link href="index.css" rel="stylesheet" />
         <link href="myaddress.css" rel="stylesheet" />
     </head>
-    <body>
+    <body onload="address()">
         <header>
             <h1 id="logoHead"><a href="index.html">CHARLOTTEXY</a></h1>
             <a href="cart.html" id="cartlink">
@@ -46,20 +46,20 @@
         <main>
             <div id="title">My Address</div>
             <div id="content">
-                <div id="name">Your name:<span id="namecontent"></span></div>
-                <div id="email">Your email:<span id="emailcontent"></span></div>
+                <div id="name"><span id="titlename"> Your name:</span><span id="namecontent"></span></div>
+                <div id="email"><span id="titleemail"> Your email:</span><span id="emailcontent"></span></div>
                 <form id="address">
                     <label for="old address">Old Address : </label>
-                    <input type="text" id="oldaddress" disabled>
+                    <textarea id="oldaddress" rows="2" disabled wrap></textarea>
                     <br><br>
                     <p style="margin-right: 41%;">New Address : </p>
                     <label for="newaddress"></label>
-                    <input style="margin-left: 11%; border-radius: 1px;" type="text" id="newaddress" placeholder="Address 1*(Street name and number)">
-                    <input style="margin-left: 11%; border-radius: 1px;" type="text" id="newaddress" placeholder="Address 2*(Additional address information)">
-                    <input style="margin-left: 11%; border-radius: 1px;" type="text" id="newaddress" placeholder="Additional Info*">
-                    <input style="margin-left: 11%; border-radius: 1px;" type="text" id="newaddress" placeholder="State*">
-                    <input style="margin-left: 11%; border-radius: 1px;" type="text" id="newaddress" placeholder="City*">
-                    <input style="margin-left: 11%; border-radius: 1px;" type="text" id="newaddress" placeholder="Postal Code*">
+                    <input style="margin-left: 11%; border-radius: 1px;" type="text" class="newaddress" id="address1" placeholder="Address 1*(Street name and number)" required>
+                    <input style="margin-left: 11%; border-radius: 1px;" type="text" class="newaddress"  id="address2" placeholder="Address 2*(Additional address information)" required>
+                    <input style="margin-left: 11%; border-radius: 1px;" type="text" class="newaddress"  id="additional" placeholder="Additional Info*" required>
+                    <input style="margin-left: 11%; border-radius: 1px;" type="text" class="newaddress"  id="state" placeholder="State*" required>
+                    <input style="margin-left: 11%; border-radius: 1px;" type="text" class="newaddress"  id="city" placeholder="City*" required>
+                    <input style="margin-left: 11%; border-radius: 1px;" type="text" class="newaddress"  id="postal" placeholder="Postal Code*" required>
                     <br>
                     <input type="submit" id="addresschangesubmit"/>
                 </form>

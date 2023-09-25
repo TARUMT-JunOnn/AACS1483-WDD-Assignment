@@ -49,14 +49,33 @@
                 <br><hr><br>
                 <div id="bank">
                     <label for="bank">Select bank :</label>
-                        <select>
+                        <select id="bankSelect">
+                            <option>Select bank</option>
                             <option value="maybank">Maybank</option>
                             <option value="publicbank">Public Bank</option>
                             <option value="ambank">Ambank</option>
                         </select>
                 </div>
-                
             </form>
+            <script>
+                var bankSelect = document.getElementById("bankSelect");
+            
+                bankSelect.addEventListener("change", function () {
+                    var selectedBank = bankSelect.value;
+            
+                    switch (selectedBank) {
+                        case "maybank":
+                            window.location.href="https://www.maybank2u.com.my/home/m2u/common/login.do";
+                            break;
+                        case "publicbank":
+                            window.location.href="https://www.pbebank.com/";
+                            break;
+                        case "ambank":
+                            window.location.href="https://www.ambank.com.my/eng/";
+                            break;
+                    }
+                });
+            </script>
         </main>
         <footer>
             <h1 class="foot" id="logoFoot"><a href="index.html">CHARLOTTEXY</a></h1>

@@ -1,15 +1,22 @@
 const login = document.getElementById("loginbutton")
 const logout = document.getElementById("logout")
-account = {name: "Admin", sumcart: "0"}
+account = {name: "Admin", sumcart: "0", address : "Bukit Jalil Branch, Endah Promenade Jalan 3/149e, Bukit Jalil 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.", email : "charlottexy@gmail.com"}
 let user = localStorage.getItem("user")
 let sumcart = localStorage.getItem("sumcart")
+let getaddress = localStorage.getItem("address")
+let getemail = localStorage.getItem("email")
 const loginnav = document.getElementById("login")
 const requiredlogin = "required.html"
+const namecontent = document.getElementById("namecontent")
+const emailcontent = document.getElementById("emailcontent")
+const oldaddress = document.getElementById("oldaddress")
 
-//if(user != null){
+
+
+if(user != null){
     document.getElementById("cartlink").style.display= "block"
     document.getElementById("profile").style.display= "flex"
-/*    loginnav.innerHTML = "My Account"
+    loginnav.innerHTML = "My Account"
     loginnav.getAttributeNode("href").value = "myacc.html"
 }else{
     loginnav.innerHTML = "Login / Sign Up"
@@ -20,9 +27,15 @@ const requiredlogin = "required.html"
             website[i].getAttributeNode("href").value = requiredlogin
         }
     }
-}*/
+}
+
+function address(){
+    namecontent.innerHTML = user
+    emailcontent.innerHTML = getemail
+    oldaddress.value = getaddress
+}
+
 function editfunc(){
-    console.log("Hello")
     window.location.href = "myaddress.html"
 }
 
@@ -33,10 +46,12 @@ logout.addEventListener("click", function logout(){
 login.addEventListener("click", function login(){
     user = account.name
     sumcart = account.sumcart
-    console.log(user)
-    console.log(sumcart)
+    getaddress = account.address
+    getemail = account.email
     localStorage.user = user
     localStorage.sumcart = sumcart
+    localStorage.address = getaddress
+    localStorage.email = getemail
     if(user != null){
         document.getElementById("cartlink").style.display= "block"
         document.getElementById("profile").style.display= "flex"
@@ -48,3 +63,4 @@ login.addEventListener("click", function login(){
         window.history.back()
     }
 })
+

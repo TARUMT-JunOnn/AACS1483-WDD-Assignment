@@ -56,7 +56,7 @@
                 <h1 id="formHead">1. SHIPPING ADDRESS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="myaddress.html" id="editLink">Edit</a>
                 </h1>
-                <br><br><br>
+                <textarea id="addresspayment" rows="2" disabled wrap></textarea>
                 <hr>
                 <h2 id="formHead2">DELIVERY DATE</h2>
                 
@@ -112,21 +112,9 @@
                 });
                 </script>
             </form>
-            <!--<button id="address">Please fill in your address</button>-->
             <br><br>
             <hr>
             <br>
-            <!--<script>
-                // Get the button element by its ID
-                var address = document.getElementById("address");
-            
-                // Add a click event listener to the button
-                address.addEventListener("click", function() {
-                // Redirect to another page
-                window.location.href = "myaddress.html"; // Replace "anotherpage.html" with the URL of the page you want to go to
-                });
-            </script>-->
-            
         </main>
         <footer>
             <h1 class="foot" id="logoFoot"><a href="index.html">CHARLOTTEXY</a></h1>
@@ -135,5 +123,8 @@
         </footer>
         <script src="login.js"></script>
         <script src="design.js"></script>
+        <script>
+            const addresspayment = document.getElementById("addresspayment")
+            addresspayment.value = localStorage.getItem("address")</script>
     </body>
 </html>

@@ -38,11 +38,30 @@ function contactfunc(){
 
 const submit = document.getElementById("submit")
 const submited = document.getElementById("submited")
+const addresschange = document.getElementById("address")
+const address1 = document.getElementById("address1")
+const address2 = document.getElementById("address2")
+const additional = document.getElementById("additional")
+const state = document.getElementById("state")
+const city = document.getElementById("city")
+const postal = document.getElementById("postal")
 
-submit.addEventListener("click", submitedfunc)
+addresschange.addEventListener("submit",function changeaddress(){
+    console.log(address1.value)
+    console.log(address2.value)
+    console.log(state.value)
+    console.log(additional.value)
+    console.log(city.value)
+    console.log(postal.value)
+    localStorage.address = address1.value + ", " + address2.value + ", " + additional.value + ", " + postal.value + " " + city.value + ", " + state.value
+    console.log(localStorage.address)
+})
 
+addresschange.addEventListener("click", submitedfunc)
 function submitedfunc(){
     submited.style.display = "block"
 }
+
+
 
 
