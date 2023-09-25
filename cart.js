@@ -1,4 +1,4 @@
-let currentcart = 0
+let currentcart = localStorage.getItem("sumcart")
 const contentno = document.getElementById("nocart")
 const contentyes = document.getElementById("havecart")
 const quantity = document.getElementsByClassName("quantity")
@@ -15,6 +15,8 @@ let ordervalue
 const order = document.getElementById("ordertotalvalue")
 const checkout = document.getElementById("checkouttitle")
 
+console.log(currentcart)
+
 if(currentcart == 0 || currentcart == null){
     contentyes.style.display = "none"
     contentno.style.display = "block"
@@ -23,14 +25,6 @@ if(currentcart == 0 || currentcart == null){
     contentyes.style.display = "flex"
 }
 
-product = product.map(function(str) {
-
-    return parseInt(str); });
-    
-    for (let i =0;i<6;i++){
-        currentcart += (product[i])
-    }
-    
 
 if(product[0] > 0){
     document.getElementById("product1").style.display = "block"
@@ -142,8 +136,6 @@ for (let i = 0 ; i < quantity.length; i++){
         window.location.reload()
     })
 }
-
-
 
 
 
