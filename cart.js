@@ -140,12 +140,21 @@ for (let i = 0 ; i < quantity.length; i++){
 
 
 for(let i =0;i < productprice.length ; i++){
-    if (productprice[i].innerHTML == "RM499.99"){
+    if (productprice[i].innerHTML == "RM499.00"){
         console.log("hi")
-        itemvalue += 499.99 * product[i]
+        itemvalue += 499 * product[i]
     }
-    else if (productprice[i].innerHTML == "RM299.99"){
-        itemvalue += 299.99 * product[i]
+    else if (productprice[i].innerHTML == "RM299.00"){
+        itemvalue += 299 * product[i]
+    }
+    else if (productprice[i].innerHTML == "RM159.00"){
+        itemvalue += 159 * product[i]
+    }
+    else if (productprice[i].innerHTML == "RM189.00"){
+        itemvalue += 189 * product[i]
+    }
+    else if (productprice[i].innerHTML == "RM369.00"){
+        itemvalue += 369 * product[i]
     }
     console.log(product[i])
     console.log(itemvalue)

@@ -22,11 +22,13 @@ if(user != null){
     loginnav.innerHTML = "Login / Sign Up"
     loginnav.getAttributeNode("href").value = "login.html"
     const website = document.getElementsByTagName("a")
+    const map =  document.getElementById("map")
     for (let i = 0; i< website.length; i++){
         if(website[i].getAttributeNode("href").value != "index.html" && website[i].getAttributeNode("href").value != "login.html" && website[i].getAttributeNode("href").value != "mailto:charlottexy@gmail.com"){
             website[i].getAttributeNode("href").value = requiredlogin
         }
     }
+
 }
 
 function address(){
