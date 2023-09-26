@@ -36,6 +36,10 @@
     display: flex;
 }
 
+#email{
+    margin-bottom: 5%;
+}
+
 #titlename, #titleemail{
     flex: 30%;
     font-family: PlayFair, sans-serif;
@@ -59,7 +63,7 @@
 #address{
     position: relative;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 5%;
     text-align: center;
     font: 20px DidotLT, sans-serif;
     width: 80%;
@@ -69,7 +73,7 @@
     background-color: transparent;
     border: none;
     resize: none;
-    font-size: 20px;
+    font-size: 18px;
     width: 80%;
     margin-left: 2%;
     color: black;
@@ -108,4 +112,8 @@ input[type="submit"]{
     font: 30px PlayFair, sans-serif;
     margin-top: 2%;
     display: none;
+}
+
+#newaddress{
+    text-align: left;
 }
