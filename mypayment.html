@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CharllotteXY</title> <!-- 这边填-->
+        <title>My Payment | CHARLOTTEXY</title> <!-- 这边填-->
         <link href="reset.css" rel="stylesheet" />
         <link href="common.css" rel="stylesheet" />
         <link href="index.css" rel="stylesheet" />
@@ -52,40 +52,43 @@
             <br><br>
             <p id="paymentdetails"><u>Payment details</u></p>
             <br>
-            <form id="paymentform">
-                <h1 id="formHead">1. SHIPPING ADDRESS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <form class="paymentform">
+                <h1 id="formhead" class="formHead">1. SHIPPING ADDRESS
                     <a href="myaddress.html" id="editLink">Edit</a>
                 </h1>
                 <textarea id="addresspayment" rows="2" disabled wrap></textarea>
                 <hr>
                 <h2 id="formHead2">DELIVERY DATE</h2>
-                
                 <p id="form">Estimated delivery time : 2 ~ 7 days
             </form>
             <br>
-            <form id="paymentForm2">
-                <div id="formHead">
-                    <h1 id="sencondFormHead">2. PAYMENT OPTION<h1>
+            <form class="paymentform">
+                <div class="formHead">
+                    <h1 id="secondFormHead">2. PAYMENT OPTION<h1>
                     <p id="form2">Please select your payment method</p>
                 </div>
-                <br>
-                <session>
+                <br><br>
+                <session id="form2session">
+                    <div>
+                    <input type="radio" name="paymentMethod" value="Credit/Debit Card" id="creditCardRadio" />
                     <label>
-                        <input type="radio" name="paymentMethod" value="Credit/Debit Card" id="creditCardRadio" />
                         Credit/Debit Card
                     </label>
-                    <br>
+                </div>
+                <div>
+                    <input type="radio" name="paymentMethod" value="TNG eWallet" id="tngEWalletRadio" />
                     <label>
-                        <input type="radio" name="paymentMethod" value="TNG eWallet" id="tngEWalletRadio" />
                         TNG eWallet
                     </label>
-                    <br>
+                </div>
+                <div>
+                    <input type="radio" name="paymentMethod" value="Online Banking" id="onlineBankingRadio" />
                     <label>
-                        <input type="radio" name="paymentMethod" value="Online Banking" id="onlineBankingRadio" />
                         Online Banking
                     </label>
+                </div>
                 </session>
-                
+                <br><br><br><br>
                 <script>
                     document.addEventListener("DOMContentLoaded", function () {
                     const creditCardRadio = document.getElementById("creditCardRadio");

@@ -1,4 +1,4 @@
-const login = document.getElementById("loginbutton")
+const login = document.getElementById("loginform")
 const logout = document.getElementById("logout")
 account = {name: "Admin", sumcart: "0", address : "Bukit Jalil Branch, Endah Promenade Jalan 3/149e, Bukit Jalil 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.", email : "charlottexy@gmail.com"}
 let user = localStorage.getItem("user")
@@ -43,15 +43,15 @@ logout.addEventListener("click", function logout(){
     localStorage.clear()
 })
 
-login.addEventListener("click", function login(){
+login.addEventListener("submit", function login(){
     user = account.name
     sumcart = account.sumcart
     getaddress = account.address
     getemail = account.email
-    localStorage.user = user
+    localStorage.user = document.getElementById("name").value
     localStorage.sumcart = sumcart
     localStorage.address = getaddress
-    localStorage.email = getemail
+    localStorage.email = document.getElementById("email").value
     if(user != null){
         document.getElementById("cartlink").style.display= "block"
         document.getElementById("profile").style.display= "flex"

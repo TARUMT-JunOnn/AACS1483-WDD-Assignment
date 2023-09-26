@@ -13,7 +13,7 @@
             <svg width="25" height="25" fill="currentColor" class="cart" viewBox="0 0 16 16" id="cartImg"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
             </a>
             <section id="profile">
-                <img id="profilepic" src="profilepic.jpg" alt="Profile Picture" height="38px" weight="38px"/>
+                <img id="profilepic" src="profilepic.jpg" alt="Profile Picture" height="38px" width="38px"/>
                 <ul class="submenu" id="profilemenu">
                     <li class="submenu" id="myacc"><a href="myacc.html">My Account</a></li>
                     <li class="submenu" id="myorder"><a href="myorder.html">My Order</a></li>
@@ -22,7 +22,7 @@
                     <hr>
                     <li class="submenu"><a href="index.html" id="logout">Log Out</a></li>
                 </ul> 
-                </section>
+            </section>
                 <nav> 
                     <ul id="head">
                         <li class="navigation"><a href="index.html" id="home">Home</a></li>
@@ -45,7 +45,11 @@
             </header>
         <main>
             <section id="homeFirst">
-            <img id="homeFirstimg" src="Background Image.jpg" height="100%" width="100%" >
+            <img id="homeFirstimg" src="Background Image.jpg" height="716px" width="1076px" usemap="#productmap">
+            <map name="productmap" id="map">
+                <area target="" alt="" title="" href="product.html" coords="606,228,92" shape="circle">
+                <area target="" alt="" title="" href="product.html" coords="346,511,464,715,736,589,617,371" shape="poly">
+            </map>
             <div id="homeFirstword">
                 <h2 id="homewelcome">WELCOME</h2>
                 <button id="homeStart" onclick="started()">Get Started</button> 
@@ -60,8 +64,8 @@
                     <div class="intro" id="titleneckless">NECKLESS</div>
                     <div class="intro" id="neckcontent">
                         <div class="goldneckless">
-                            <img id="goldneckless" src="necklessgold.jpg" alt="" height="100%" width="100%"/>
-                            <p id="goldnecklesstxt">Four-leaf clover necklace gold color<br>RM299.00</a>
+                            <img id="goldneckless" src="necklessgold.jpg" alt="Glover's bless" height="100%" width="100%"/>
+                            <p id="goldnecklesstxt">Glover's bless<br>RM299.99</a>
                         </div>
                     </div>
                 </div>
