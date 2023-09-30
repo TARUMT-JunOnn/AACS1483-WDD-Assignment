@@ -10,6 +10,7 @@ const requiredlogin = "required.html"
 const namecontent = document.getElementById("namecontent")
 const emailcontent = document.getElementById("emailcontent")
 const oldaddress = document.getElementById("oldaddress")
+const loginbutton = document.getElementById("loginbutton")
 
 
 
@@ -45,24 +46,23 @@ logout.addEventListener("click", function logout(){
     localStorage.clear()
 })
 
-login.addEventListener("submit", function login(){
-    user = account.name
+login.addEventListener("submit", loginfunc)
+
+function loginfunc(event){
+    user = document.getElementById("name").value
     sumcart = account.sumcart
     getaddress = account.address
-    getemail = account.email
-    localStorage.user = document.getElementById("name").value
+    getemail = document.getElementById("email").value
+    localStorage.user = user
     localStorage.sumcart = sumcart
     localStorage.address = getaddress
-    localStorage.email = document.getElementById("email").value
+    localStorage.email = getemail
     if(user != null){
         document.getElementById("cartlink").style.display= "block"
         document.getElementById("profile").style.display= "flex"
     }
+    event.preventDefault()
     const previousURL = new URL(document.referrer, "http://example.com/")
-    if (previousURL.pathname == "/required.html"){
-        window.location.href = "index.html"
-    }else{
-        window.history.back()
-    }
-})
+    window.location.href = "index.html"
+}
 

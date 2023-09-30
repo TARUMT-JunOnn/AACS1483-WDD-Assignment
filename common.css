@@ -156,8 +156,8 @@ ul.submenu{
     background-color: white;
     width: 275%;
     position: absolute;
-    top: 42px;
-    left: 15px;
+    top: 37px;
+    left: 10px;
 }
 
 img:hover+#profilemenu, #profilemenu:hover{
