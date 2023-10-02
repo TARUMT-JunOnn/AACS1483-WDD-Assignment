@@ -25,7 +25,7 @@ if(user != null){
     const website = document.getElementsByTagName("a")
     const map =  document.getElementById("map")
     for (let i = 0; i< website.length; i++){
-        if(website[i].getAttributeNode("href").value != "index.html" && website[i].getAttributeNode("href").value != "login.html" && website[i].getAttributeNode("href").value != "mailto:charlottexy@gmail.com"){
+        if(website[i].getAttributeNode("href").value != "/" && website[i].getAttributeNode("href").value != "login.html" && website[i].getAttributeNode("href").value != "mailto:charlottexy@gmail.com"){
             website[i].getAttributeNode("href").value = requiredlogin
         }
     }
@@ -63,6 +63,6 @@ function loginfunc(event){
     }
     event.preventDefault()
     const previousURL = new URL(document.referrer, "http://example.com/")
-    window.location.href = "index.html"
+    window.location.href = "/"
 }
 
